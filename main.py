@@ -7,11 +7,12 @@ from ltemch import mchs
 
 def Mch_judge(ch, mch):
     if ch < mch:
-        return 'L'
-    elif ch> mch:
-        return 'H'
+        return '-1'
+    elif ch > mch:
+        return '0'
     else:
-        return 'M'
+        return '1'
+
 
 def csv2pivot_table():
     path = pathlib.Path("./")
@@ -30,23 +31,25 @@ def csv2pivot_table():
             df['channel'] = np.nan
 
             for b in set(df.Band):
-                df.loc[df.Band==b, 'channel'] = df.loc[df.Band==b, 'Ch'].apply(Mch_judge, args=(mchs[b],))
-
+                df.loc[df.Band == b, 'channel'] = df.loc[df.Band == b, 'Ch'].apply(Mch_judge, args=(mchs[b],))
 
             # this begins to transfer to pivot table
 
             prb_pwr_condition = (df['Test Item'].str.contains('Adjacent Channel Power') &
-                         df['Modulation'].str.contains('QPSK-PRB@0'))  # filter what we want, and this can be modified
+                                 df['Modulation'].str.contains(
+                                     'QPSK-PRB@0'))  # filter what we want, and this can be modified
             frb_pwr_condition = (df['Test Item'].str.contains('Adjacent Channel Power') &
-                                 df['Modulation'].str.contains('QPSK-FRB'))  # filter what we want, and this can be modified
+                                 df['Modulation'].str.contains(
+                                     'QPSK-FRB'))  # filter what we want, and this can be modified
 
             df_prb_pwr = df[prb_pwr_condition]
             df_frb_pwr = df[frb_pwr_condition]
 
             pt_prb_pwr = df_prb_pwr.pivot_table(index='Band', columns=['BW', 'channel'], values='Result', aggfunc='max')
             pt_frb_pwr = df_frb_pwr.pivot_table(index='Band', columns=['BW', 'channel'], values='Result', aggfunc='max')
-            #print(df_frb_pwr[['Ch', 'Result']].head(20))
+            # print(df_frb_pwr[['Ch', 'Result']].head(20))
             print(pt_frb_pwr)
+
 
 def main():
     csv2pivot_table()
@@ -54,3 +57,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
