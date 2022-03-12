@@ -8,6 +8,7 @@ from test_items import pwr_items, aclr_items, evm_items
 PATH = pathlib.Path("./")
 USECOLS = ['Band', 'Test Item', 'Ch', 'Result']
 ITEMS = [pwr_items, aclr_items, evm_items]
+ITEMS_INDEX = {'pwr': 0, 'aclr': 1, 'evm': 2}
 MODULATIONS = ['QPSK-PRB@0', 'QPSK-FRB', '16QAM-FRB']
 
 
@@ -16,13 +17,13 @@ class Csv2pt:
         self.path = path
         self.cols = cols
 
-    def mch_judge(self, ch, mch):
+    def _mch_judge(self, ch, mch):
         if ch < mch:
             return '-1'
         elif ch > mch:
-            return '0'
-        else:
             return '1'
+        else:
+            return '0'
 
     def refresh(self):
         for file in self.path.iterdir():
@@ -38,7 +39,7 @@ class Csv2pt:
 
                 for b in set(self.df.Band):
                     self.df.loc[self.df.Band == b, 'channel'] = self.df.loc[self.df.Band == b, 'Ch'].apply(
-                        self.mch_judge, args=(mchs[b],))
+                        self._mch_judge, args=(mchs[b],))
 
     def conditions(self):
         # self.pwr_condition = {}
@@ -77,17 +78,19 @@ class Csv2pt:
 
     def pwr(self):
         # this begins to transfer to pivot table
-        self.df_pwr = {}
-        self.pt_pwr = {}
-        for pwr_type in ITEMS[0]:
-            self.df_pwr[pwr_type] = {}
-            self.pt_pwr[pwr_type] = {}
-            for mod in MODULATIONS:
-                self.df_pwr[mod] = self.df[self.condition[pwr_type][mod]]
-                # self.df_pwr[mod] = self.df[self.condition[mod]]
-                self.pt_pwr[mod] = self.df_pwr[mod].pivot_table(index='Band', columns=['BW', 'channel'],
-                                                                values='Result',
-                                                                aggfunc='max')
+        self.df_pwr, self.pt_pwr = self._csv2pt(self.df, self.condition, ITEMS_INDEX['pwr'])
+
+        # self.df_pwr = {}
+        # self.pt_pwr = {}
+        # for pwr_type in ITEMS[0]:
+        #     self.df_pwr[pwr_type] = {}
+        #     self.pt_pwr[pwr_type] = {}
+        #     for mod in MODULATIONS:
+        #         self.df_pwr[mod] = self.df[self.condition[pwr_type][mod]]
+        #         # self.df_pwr[mod] = self.df[self.condition[mod]]
+        #         self.pt_pwr[mod] = self.df_pwr[mod].pivot_table(index='Band', columns=['BW', 'channel'],
+        #                                                         values='Result',
+        #                                                         aggfunc='max')
 
         # self.df_prb_pwr = self.df[self.prb_pwr_condition]
         # self.df_frb_pwr = self.df[self.frb_pwr_condition]
@@ -105,19 +108,21 @@ class Csv2pt:
         # print(self.pt_frb_16qam_pwr)
 
     def aclr(self):
-        self.df_aclr = {}
-        self.pt_aclr = {}
-        for aclr_type in ITEMS[1]:
-            self.df_aclr[aclr_type] = {}
-            self.pt_aclr[aclr_type] = {}
-            for mod in MODULATIONS:
-                self.df_aclr[aclr_type][mod] = self.df[self.condition[aclr_type][mod]]
+        self.df_aclr, self.pt_aclr = self._csv2pt(self.df, self.condition, ITEMS_INDEX['aclr'])
 
-                # self.df_aclr[mod] = self.df[self.aclr_condition[mod]]
-                self.pt_aclr[aclr_type][mod] = self.df_aclr[aclr_type][mod].pivot_table(index='Band',
-                                                                                        columns=['BW', 'channel'],
-                                                                                        values='Result',
-                                                                                        aggfunc='max')
+        # self.df_aclr = {}
+        # self.pt_aclr = {}
+        # for aclr_type in ITEMS[1]:
+        #     self.df_aclr[aclr_type] = {}
+        #     self.pt_aclr[aclr_type] = {}
+        #     for mod in MODULATIONS:
+        #         self.df_aclr[aclr_type][mod] = self.df[self.condition[aclr_type][mod]]
+        #
+        #         # self.df_aclr[mod] = self.df[self.aclr_condition[mod]]
+        #         self.pt_aclr[aclr_type][mod] = self.df_aclr[aclr_type][mod].pivot_table(index='Band',
+        #                                                                                 columns=['BW', 'channel'],
+        #                                                                                 values='Result',
+        #                                                                                 aggfunc='max')
 
         # self.df_prb_aclr = self.df[self.prb_aclr_condition]
         # self.df_frb_aclr = self.df[self.frb_aclr_condition]
@@ -135,18 +140,35 @@ class Csv2pt:
         # print(self.pt_frb_16qam_aclr)
 
     def evm(self):
-        self.df_evm = {}
-        self.pt_evm = {}
-        for evm_type in ITEMS[2]:
-            self.df_evm[evm_type] = {}
-            self.pt_evm[evm_type] = {}
+        self.df_evm, self.pt_evm = self._csv2pt(self.df, self.condition, ITEMS_INDEX['evm'])
+
+        # self.df_evm = {}
+        # self.pt_evm = {}
+        # for evm_type in ITEMS[2]:
+        #     self.df_evm[evm_type] = {}
+        #     self.pt_evm[evm_type] = {}
+        #     for mod in MODULATIONS:
+        #         self.df_evm[evm_type][mod] = self.df[self.condition[evm_type][mod]]
+        #         self.pt_evm[evm_type][mod] = self.df_evm[evm_type][mod].pivot_table(index='Band',
+        #                                                                             columns=['BW', 'channel'],
+        #                                                                             values='Result',
+        #                                                                             aggfunc='max')
+
+    def _csv2pt(self, df, condition, index):
+        df_want = {}
+        pt_want = {}
+        for _type in ITEMS[index]:
+            df_want[_type] = {}
+            pt_want[_type] = {}
             for mod in MODULATIONS:
-                self.df_evm[evm_type][mod] = self.df[self.condition[evm_type][mod]]
-                self.pt_evm[evm_type][mod] = self.df_evm[evm_type][mod].pivot_table(index='Band',
-                                                                                    columns=['BW', 'channel'],
-                                                                                    values='Result',
-                                                                                    aggfunc='max')
-        print(self.pt_evm)
+                df_want[_type][mod] = df[condition[_type][mod]]
+
+                # self.df_aclr[mod] = self.df[self.aclr_condition[mod]]
+                pt_want[_type][mod] = df_want[_type][mod].pivot_table(index='Band',
+                                                                      columns=['BW', 'channel'],
+                                                                      values='Result',
+                                                                      aggfunc='max')
+        return df_want, pt_want
 
     def linechart(self):
         pass
