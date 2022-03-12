@@ -17,7 +17,8 @@ class Csv2pt:
         self.path = path
         self.cols = cols
 
-    def _mch_judge(self, ch, mch):
+    @staticmethod
+    def _mch_judge(ch, mch):
         if ch < mch:
             return '-1'
         elif ch > mch:
@@ -154,7 +155,8 @@ class Csv2pt:
         #                                                                             values='Result',
         #                                                                             aggfunc='max')
 
-    def _csv2pt(self, df, condition, index):
+    @staticmethod
+    def _csv2pt(df, condition, index):
         df_want = {}
         pt_want = {}
         for _type in ITEMS[index]:
