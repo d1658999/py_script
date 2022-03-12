@@ -52,6 +52,7 @@ class Csv2pt:
                 for mod in MODULATIONS:
                     self.condition[item][mod] = (self.df['Test Item'].str.contains(item) &
                                                  self.df['Modulation'].str.contains(mod))
+
                 # self.pwr_condition[mod] = (self.df['Test Item'].str.contains('Adjacent Channel Power') &
                 #                            self.df['Modulation'].str.contains(mod))
                 # self.aclr_condition[mod] = (self.df['Test Item'].str.contains('-UTRA') &
@@ -163,13 +164,16 @@ class Csv2pt:
             df_want[_type] = {}
             pt_want[_type] = {}
             for mod in MODULATIONS:
-                df_want[_type][mod] = df[condition[_type][mod]]
+                if mod in set(df[df['Test Item'].str.contains(_type)].Modulation):
+                    df_want[_type][mod] = df[condition[_type][mod]]
 
-                # self.df_aclr[mod] = self.df[self.aclr_condition[mod]]
-                pt_want[_type][mod] = df_want[_type][mod].pivot_table(index='Band',
-                                                                      columns=['BW', 'channel'],
-                                                                      values='Result',
-                                                                      aggfunc='max')
+                    # self.df_aclr[mod] = self.df[self.aclr_condition[mod]]
+                    pt_want[_type][mod] = df_want[_type][mod].pivot_table(index='Band',
+                                                                          columns=['BW', 'channel'],
+                                                                          values='Result',
+                                                                          aggfunc='max')
+                else:
+                    print(f'{_type}, {mod} is not in the data')
         return df_want, pt_want
 
     def linechart(self):
@@ -184,8 +188,8 @@ def main():
     csv2pt.refresh()
     csv2pt.conditions()
     csv2pt.pwr()
-    csv2pt.aclr()
-    csv2pt.evm()
+    # csv2pt.aclr()
+    # csv2pt.evm()
 
 
 if __name__ == '__main__':
