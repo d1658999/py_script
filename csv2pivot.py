@@ -1,6 +1,7 @@
 import pathlib
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 
 from ltemch import mchs
 from test_items import pwr_items, aclr_items, evm_items
@@ -10,6 +11,7 @@ USECOLS = ['Band', 'Test Item', 'Ch', 'Result']
 ITEMS = [pwr_items, aclr_items, evm_items]
 ITEMS_INDEX = {'pwr': 0, 'aclr': 1, 'evm': 2}
 MODULATIONS = ['QPSK-PRB@0', 'QPSK-FRB', '16QAM-FRB']
+ACLR_LIMITS = {'-UTRA': -32.2, '-EUTRA': -29.2}
 
 
 class Csv2pt:
@@ -20,11 +22,11 @@ class Csv2pt:
     @staticmethod
     def _mch_judge(ch, mch):
         if ch < mch:
-            return '-1'
+            return 'L'
         elif ch > mch:
-            return '1'
+            return 'H'
         else:
-            return '0'
+            return 'M'
 
     def refresh(self):
         for file in self.path.iterdir():
@@ -53,134 +55,140 @@ class Csv2pt:
                     self.condition[item][mod] = (self.df['Test Item'].str.contains(item) &
                                                  self.df['Modulation'].str.contains(mod))
 
-                # self.pwr_condition[mod] = (self.df['Test Item'].str.contains('Adjacent Channel Power') &
-                #                            self.df['Modulation'].str.contains(mod))
-                # self.aclr_condition[mod] = (self.df['Test Item'].str.contains('-UTRA') &
-                #                        self.df['Modulation'].str.contains(mod))
-
-        # filter what we want, and this can be modified
-        # self.prb_pwr_condition = (self.df['Test Item'].str.contains('Adjacent Channel Power') &
-        #                           self.df['Modulation'].str.contains('QPSK-PRB@0')
-        #                           )
-        # self.frb_pwr_condition = (self.df['Test Item'].str.contains('Adjacent Channel Power') &
-        #                           self.df['Modulation'].str.contains('QPSK-FRB')
-        #                           )
-        # self.frb_16qam_pwr_condition = (self.df['Test Item'].str.contains('Adjacent Channel Power') &
-        #                           self.df['Modulation'].str.contains('16QAM-FRB')
-        #                           )
-        # self.prb_aclr_condition = (self.df['Test Item'].str.contains('UTRA') &
-        #                           self.df['Modulation'].str.contains('QPSK-PRB@0')
-        #                           )
-        # self.frb_aclr_condition = (self.df['Test Item'].str.contains('UTRA') &
-        #                           self.df['Modulation'].str.contains('QPSK-FRB')
-        #                           )
-        # self.frb_16qam_aclr_condition = (self.df['Test Item'].str.contains('UTRA') &
-        #                           self.df['Modulation'].str.contains('16QAM-FRB')
-        #                           )
-
     def pwr(self):
         # this begins to transfer to pivot table
         self.df_pwr, self.pt_pwr = self._csv2pt(self.df, self.condition, ITEMS_INDEX['pwr'])
 
-        # self.df_pwr = {}
-        # self.pt_pwr = {}
-        # for pwr_type in ITEMS[0]:
-        #     self.df_pwr[pwr_type] = {}
-        #     self.pt_pwr[pwr_type] = {}
-        #     for mod in MODULATIONS:
-        #         self.df_pwr[mod] = self.df[self.condition[pwr_type][mod]]
-        #         # self.df_pwr[mod] = self.df[self.condition[mod]]
-        #         self.pt_pwr[mod] = self.df_pwr[mod].pivot_table(index='Band', columns=['BW', 'channel'],
-        #                                                         values='Result',
-        #                                                         aggfunc='max')
-
-        # self.df_prb_pwr = self.df[self.prb_pwr_condition]
-        # self.df_frb_pwr = self.df[self.frb_pwr_condition]
-        # self.df_frb_16qam_pwr = self.df[self.frb_16qam_pwr_condition]
-        #
-        # self.pt_prb_pwr = self.df_prb_pwr.pivot_table(index='Band', columns=['BW', 'channel'], values='Result',
-        #                                               aggfunc='max')
-        # self.pt_frb_pwr = self.df_frb_pwr.pivot_table(index='Band', columns=['BW', 'channel'], values='Result',
-        #                                               aggfunc='max')
-        # self.pt_frb_16qam_pwr = self.df_frb_16qam_pwr.pivot_table(index='Band', columns=['BW', 'channel'], values='Result',
-        #                                               aggfunc='max')
-        # # print(df_frb_pwr[['Ch', 'Result']].head(20))
-        # print(self.pt_prb_pwr)
-        # print(self.pt_frb_pwr)
-        # print(self.pt_frb_16qam_pwr)
-
     def aclr(self):
         self.df_aclr, self.pt_aclr = self._csv2pt(self.df, self.condition, ITEMS_INDEX['aclr'])
-
-        # self.df_aclr = {}
-        # self.pt_aclr = {}
-        # for aclr_type in ITEMS[1]:
-        #     self.df_aclr[aclr_type] = {}
-        #     self.pt_aclr[aclr_type] = {}
-        #     for mod in MODULATIONS:
-        #         self.df_aclr[aclr_type][mod] = self.df[self.condition[aclr_type][mod]]
-        #
-        #         # self.df_aclr[mod] = self.df[self.aclr_condition[mod]]
-        #         self.pt_aclr[aclr_type][mod] = self.df_aclr[aclr_type][mod].pivot_table(index='Band',
-        #                                                                                 columns=['BW', 'channel'],
-        #                                                                                 values='Result',
-        #                                                                                 aggfunc='max')
-
-        # self.df_prb_aclr = self.df[self.prb_aclr_condition]
-        # self.df_frb_aclr = self.df[self.frb_aclr_condition]
-        # self.df_frb_16qam_aclr = self.df[self.frb_16qam_aclr_condition]
-        #
-        # self.pt_prb_aclr = self.df_prb_aclr.pivot_table(index='Band', columns=['BW', 'channel'], values='Result',
-        #                                               aggfunc='max')
-        # self.pt_frb_aclr = self.df_frb_aclr.pivot_table(index='Band', columns=['BW', 'channel'], values='Result',
-        #                                               aggfunc='max')
-        # self.pt_frb_16qam_aclr = self.df_frb_16qam_aclr.pivot_table(index='Band', columns=['BW', 'channel'], values='Result',
-        #                                               aggfunc='max')
-        # # print(df_frb_pwr[['Ch', 'Result']].head(20))
-        # print(self.pt_prb_aclr)
-        # print(self.pt_frb_aclr)
-        # print(self.pt_frb_16qam_aclr)
 
     def evm(self):
         self.df_evm, self.pt_evm = self._csv2pt(self.df, self.condition, ITEMS_INDEX['evm'])
 
-        # self.df_evm = {}
-        # self.pt_evm = {}
-        # for evm_type in ITEMS[2]:
-        #     self.df_evm[evm_type] = {}
-        #     self.pt_evm[evm_type] = {}
-        #     for mod in MODULATIONS:
-        #         self.df_evm[evm_type][mod] = self.df[self.condition[evm_type][mod]]
-        #         self.pt_evm[evm_type][mod] = self.df_evm[evm_type][mod].pivot_table(index='Band',
-        #                                                                             columns=['BW', 'channel'],
-        #                                                                             values='Result',
-        #                                                                             aggfunc='max')
+    def pwr_linechart(self):
+        self._linechart(pwr_items, self.df_pwr)
+
+    def evm_linechart(self):
+        self._linechart(evm_items, self.df_evm)
+
+    def aclr_linechart(self):
+        self._linechart(aclr_items, self.df_aclr, ACLR_LIMITS, hline_bool=True)
+        # for item in aclr_items:
+        #     for bw in set(self.df[self.df['Test Item'].str.contains(item)].BW):
+        #         legend_label = []
+        #         plt.figure(figsize=(20, 10))
+        #         for mod in MODULATIONS:
+        #             legend_label.append(bw+'_'+mod)
+        #             print(item, mod, bw)
+        #             self._plotlines(self.df_aclr, item, mod, bw, ACLR_LIMITS[item])
+        #
+        #         plt.title(item)
+        #         plt.legend(legend_label)
+        #         plt.grid(True)
+        #
+        #         plt.savefig(f'{item}_{bw}.png', dpi=300)
+        #         #plt.show()
+
+    def _linechart(self, want_items, df_item, limit=None, hline_bool=False):
+        for item in want_items:
+            for bw in set(self.df[self.df['Test Item'].str.contains(item)].BW):
+                legend_label = []
+                plt.figure(figsize=(20, 10))
+                for mod in MODULATIONS:
+                    legend_label.append(bw+'_'+mod)
+                    print(item, mod, bw)
+                    if limit != None:
+                        self._plotlines(df_item, item, mod, bw, limit=limit[item], hlines=hline_bool)
+                    else:
+                        self._plotlines(df_item, item, mod, bw)
+
+
+                plt.title(item)
+                plt.legend(legend_label)
+                plt.grid(True)
+                plt.savefig(f'{item}_{bw}.png', dpi=300)
+
+        # for item in self.df_pwr:
+        #     for mod in self.df_pwr[item]:
+        #         for bw in set(self.df_pwr[item][mod].BW):
+        #             df_pwr_item_mod = self.df_pwr[item][mod]
+        #             df_pwr_item_mod_bw = df_pwr_item_mod[df_pwr_item_mod.BW == bw]
+        #             values = range(len(df_pwr_item_mod_bw.index))
+        #             x = df_pwr_item_mod_bw.Band.astype(str).str.cat(df_pwr_item_mod_bw[['BW', 'channel']], sep='_')
+        #             plt.plot(x, df_pwr_item_mod_bw.Result, '-o')
+        #             plt.xticks(values, x, rotation=90)
+        #             plt.grid(True)
+        #             plt.show()
+        #             print(mod, bw)
+    @staticmethod
+    def _plotlines(df, item, mod, bw, limit=None, hlines=False):
+        df_item_mod = df[item][mod]
+        df_item_mod_bw = df_item_mod[df_item_mod.BW == bw]
+        values = range(len(df_item_mod_bw.index))
+        x = df_item_mod_bw.Band.astype(str).str.cat(df_item_mod_bw[['BW', 'channel']], sep='_')
+        plt.plot(values, df_item_mod_bw.Result, '-o')
+        if hlines == True:
+            plt.hlines(y=limit, xmin=0, xmax=len(df_item_mod_bw.index), linewidth=2, color='r', linestyles='--')
+        plt.xticks(values, x, rotation=90)
+
+
+
+
+
+
+
+                    # df_pwr_mod_bw = self.df_pwr[self.df_pwr[item][mod].BW == bw]
+                    # values = range(len(df_pwr_mod_bw.index))
+                    # x = df_pwr_mod_bw.astype(str).str.cat(df_pwr_mod_bw.channel, sep='_')
+                    # plt.plot(values, df_pwr_mod_bw, '-o')
+                    # plt.xticks(values, x, rotation=90)
+                    # plt.show()
+
+
+
+
+        # self.df_prb = self.df_pwr['Adjacent Channel Power']['QPSK-PRB@0']
+        # self.df_prb_5M = self.df_prb[self.df_prb.BW == '5MHZ']
+        # self.df_prb_20M = self.df_prb[self.df_prb.BW == '20MHZ']
+        # x1 = self.df_prb_5M.Band.astype(str).str.cat(self.df_prb_5M.channel, sep='_')
+        #
+        #
+        # values1 = range(len(self.df_prb_5M.index))  #use. index is faster slightly
+        # values2 = range(len(self.df_prb_20M.index))
+        # plt.plot(values1, self.df_prb_5M['Result'], '-o')
+        # plt.plot(values2, self.df_prb_20M['Result'], '-o')
+
+        # plt.xticks(values1, x1, rotation=90)
+        # plt.show()
+
+    def colorcode(self):
+        pass
+
+    def save_fig(self):
+        pass
+
+    def savefiles(self):
+        pass
 
     @staticmethod
     def _csv2pt(df, condition, index):
         df_want = {}
         pt_want = {}
-        for _type in ITEMS[index]:
-            df_want[_type] = {}
-            pt_want[_type] = {}
+        for _item in ITEMS[index]:
+            df_want[_item] = {}
+            pt_want[_item] = {}
             for mod in MODULATIONS:
-                if mod in set(df[df['Test Item'].str.contains(_type)].Modulation):
-                    df_want[_type][mod] = df[condition[_type][mod]]
+                if mod in set(df[df['Test Item'].str.contains(_item)].Modulation):
+                    df_want[_item][mod] = df[condition[_item][mod]]
 
                     # self.df_aclr[mod] = self.df[self.aclr_condition[mod]]
-                    pt_want[_type][mod] = df_want[_type][mod].pivot_table(index='Band',
+                    pt_want[_item][mod] = df_want[_item][mod].pivot_table(index='Band',
                                                                           columns=['BW', 'channel'],
                                                                           values='Result',
                                                                           aggfunc='max')
                 else:
-                    print(f'{_type}, {mod} is not in the data')
+                    print(f'{_item}, {mod} is not in the data')
         return df_want, pt_want
-
-    def linechart(self):
-        pass
-
-    def colorcode(self):
-        pass
 
 
 def main():
@@ -188,8 +196,11 @@ def main():
     csv2pt.refresh()
     csv2pt.conditions()
     csv2pt.pwr()
-    # csv2pt.aclr()
-    # csv2pt.evm()
+    csv2pt.aclr()
+    csv2pt.evm()
+    csv2pt.pwr_linechart()
+    csv2pt.aclr_linechart()
+    csv2pt.evm_linechart()
 
 
 if __name__ == '__main__':
