@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
+
 from ltemch import mchs
 from test_items import pwr_items, aclr_items, evm_items
 
@@ -10,7 +11,7 @@ PATH = pathlib.Path("./")
 USECOLS = ['Band', 'Test Item', 'Ch', 'Result']
 ITEMS = [pwr_items, aclr_items, evm_items]
 ITEMS_INDEX = {'pwr': 0, 'aclr': 1, 'evm': 2}
-MODULATIONS = ['QPSK-PRB@0', 'QPSK-FRB', '16QAM-FRB']
+MODULATIONS = ['QPSK-PRB@0', 'QPSK-FRB', '16QAM-PRB@0','16QAM-FRB']
 ACLR_LIMITS = {'-UTRA': -32.2, '-EUTRA': -29.2}
 
 
@@ -72,7 +73,7 @@ class Csv2pt:
         self._linechart(evm_items, self.df_evm)
 
     def aclr_linechart(self):
-        self._linechart(aclr_items, self.df_aclr, ACLR_LIMITS, hline_bool=True)
+        self._linechart(aclr_items, self.df_aclr, ACLR_LIMITS)
         # for item in aclr_items:
         #     for bw in set(self.df[self.df['Test Item'].str.contains(item)].BW):
         #         legend_label = []
@@ -88,22 +89,26 @@ class Csv2pt:
         #
         #         plt.savefig(f'{item}_{bw}.png', dpi=300)
         #         #plt.show()
-
-    def _linechart(self, want_items, df_item, limit=None, hline_bool=False):
+    def _linechart(self, want_items, df_item, limit=None):
+    #def _linechart(self, want_items, df_item, limit=None, hline_bool=False):
         for item in want_items:
             for bw in set(self.df[self.df['Test Item'].str.contains(item)].BW):
                 legend_label = []
                 plt.figure(figsize=(20, 10))
+                xmax_value = None
                 for mod in MODULATIONS:
-                    legend_label.append(bw+'_'+mod)
+                    legend_label.append(bw + '_' + mod)
                     print(item, mod, bw)
-                    if limit != None:
-                        self._plotlines(df_item, item, mod, bw, limit=limit[item], hlines=hline_bool)
-                    else:
-                        self._plotlines(df_item, item, mod, bw)
-
+                    # if limit is not None:
+                    #     self._plotlines(df_item, item, mod, bw, limit=limit[item], hlines=hline_bool)
+                    # else:
+                    #     self._plotlines(df_item, item, mod, bw)
+                    xmax_value = self._plotlines(df_item, item, mod, bw)
 
                 plt.title(item)
+                if limit[item] is not None:
+                    plt.hlines(y=limit[item], xmin=0, xmax=xmax_value, linewidth=2, color='r', linestyles='--')
+                    legend_label.append('USL')
                 plt.legend(legend_label)
                 plt.grid(True)
                 plt.savefig(f'{item}_{bw}.png', dpi=300)
@@ -120,32 +125,26 @@ class Csv2pt:
         #             plt.grid(True)
         #             plt.show()
         #             print(mod, bw)
+
     @staticmethod
-    def _plotlines(df, item, mod, bw, limit=None, hlines=False):
+    def _plotlines(df, item, mod, bw):
+    #def _plotlines(df, item, mod, bw, limit=None, hlines=False):
         df_item_mod = df[item][mod]
         df_item_mod_bw = df_item_mod[df_item_mod.BW == bw]
         values = range(len(df_item_mod_bw.index))
         x = df_item_mod_bw.Band.astype(str).str.cat(df_item_mod_bw[['BW', 'channel']], sep='_')
         plt.plot(values, df_item_mod_bw.Result, '-o')
-        if hlines == True:
-            plt.hlines(y=limit, xmin=0, xmax=len(df_item_mod_bw.index), linewidth=2, color='r', linestyles='--')
+        # if hlines is True:
+        #     plt.hlines(y=limit, xmin=0, xmax=len(df_item_mod_bw.index), linewidth=2, color='r', linestyles='--')
         plt.xticks(values, x, rotation=90)
+        return len(x)
 
-
-
-
-
-
-
-                    # df_pwr_mod_bw = self.df_pwr[self.df_pwr[item][mod].BW == bw]
-                    # values = range(len(df_pwr_mod_bw.index))
-                    # x = df_pwr_mod_bw.astype(str).str.cat(df_pwr_mod_bw.channel, sep='_')
-                    # plt.plot(values, df_pwr_mod_bw, '-o')
-                    # plt.xticks(values, x, rotation=90)
-                    # plt.show()
-
-
-
+        # df_pwr_mod_bw = self.df_pwr[self.df_pwr[item][mod].BW == bw]
+        # values = range(len(df_pwr_mod_bw.index))
+        # x = df_pwr_mod_bw.astype(str).str.cat(df_pwr_mod_bw.channel, sep='_')
+        # plt.plot(values, df_pwr_mod_bw, '-o')
+        # plt.xticks(values, x, rotation=90)
+        # plt.show()
 
         # self.df_prb = self.df_pwr['Adjacent Channel Power']['QPSK-PRB@0']
         # self.df_prb_5M = self.df_prb[self.df_prb.BW == '5MHZ']
@@ -198,9 +197,9 @@ def main():
     csv2pt.pwr()
     csv2pt.aclr()
     csv2pt.evm()
-    csv2pt.pwr_linechart()
+    # csv2pt.pwr_linechart()
     csv2pt.aclr_linechart()
-    csv2pt.evm_linechart()
+    # csv2pt.evm_linechart()
 
 
 if __name__ == '__main__':
