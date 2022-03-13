@@ -3,16 +3,22 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-
 from ltemch import mchs
 from test_items import pwr_items, aclr_items, evm_items
+from specs import aclr_usls, evm_usls
 
 PATH = pathlib.Path("./")
 USECOLS = ['Band', 'Test Item', 'Ch', 'Result']
+
+#this _EN can be modified
+PWR_EN = 1
+ACLR_EN = 1
+EVM_EN = 0
+MODULATIONS = ['QPSK-PRB@0', 'QPSK-FRB', '16QAM-PRB@0', '16QAM-FRB', '64MAM-FRB'] # this is can be modified to we want
+
 ITEMS = [pwr_items, aclr_items, evm_items]
 ITEMS_INDEX = {'pwr': 0, 'aclr': 1, 'evm': 2}
-MODULATIONS = ['QPSK-PRB@0', 'QPSK-FRB', '16QAM-PRB@0','16QAM-FRB']
-ACLR_LIMITS = {'-UTRA': -32.2, '-EUTRA': -29.2}
+ACLR_USLS = aclr_usls
 
 
 class Csv2pt:
@@ -67,106 +73,65 @@ class Csv2pt:
         self.df_evm, self.pt_evm = self._csv2pt(self.df, self.condition, ITEMS_INDEX['evm'])
 
     def pwr_linechart(self):
-        self._linechart(pwr_items, self.df_pwr)
+        self._linechart_save(pwr_items, self.df_pwr)
 
     def evm_linechart(self):
-        self._linechart(evm_items, self.df_evm)
+        self._linechart_save(evm_items, self.df_evm)
 
     def aclr_linechart(self):
-        self._linechart(aclr_items, self.df_aclr, ACLR_LIMITS)
-        # for item in aclr_items:
-        #     for bw in set(self.df[self.df['Test Item'].str.contains(item)].BW):
-        #         legend_label = []
-        #         plt.figure(figsize=(20, 10))
-        #         for mod in MODULATIONS:
-        #             legend_label.append(bw+'_'+mod)
-        #             print(item, mod, bw)
-        #             self._plotlines(self.df_aclr, item, mod, bw, ACLR_LIMITS[item])
-        #
-        #         plt.title(item)
-        #         plt.legend(legend_label)
-        #         plt.grid(True)
-        #
-        #         plt.savefig(f'{item}_{bw}.png', dpi=300)
-        #         #plt.show()
-    def _linechart(self, want_items, df_item, limit=None):
-    #def _linechart(self, want_items, df_item, limit=None, hline_bool=False):
+        self._linechart_save(aclr_items, self.df_aclr, ACLR_USLS)
+
+    def _linechart_save(self, want_items, df_item, limit=None):
+        global xmax_value, legend_label
         for item in want_items:
             for bw in set(self.df[self.df['Test Item'].str.contains(item)].BW):
-                legend_label = []
-                plt.figure(figsize=(20, 10))
-                xmax_value = None
-                for mod in MODULATIONS:
-                    legend_label.append(bw + '_' + mod)
-                    print(item, mod, bw)
-                    # if limit is not None:
-                    #     self._plotlines(df_item, item, mod, bw, limit=limit[item], hlines=hline_bool)
-                    # else:
-                    #     self._plotlines(df_item, item, mod, bw)
-                    xmax_value = self._plotlines(df_item, item, mod, bw)
+                try:
+                    legend_label = []
+                    plt.figure(figsize=(20, 10))
+                    xmax_value = None
+                    for mod in MODULATIONS:
+                        legend_label.append(bw + '_' + mod)
+                        print(f'linechart is processing for {item}, {mod}, {bw}')
+                        xmax_value = self._plotlines(df_item, item, mod, bw)
+                except KeyError as err:
+                    print(f'{err} is not in the raw data ')
 
                 plt.title(item)
-                if limit[item] is not None:
+                if limit is not None:
                     plt.hlines(y=limit[item], xmin=0, xmax=xmax_value, linewidth=2, color='r', linestyles='--')
                     legend_label.append('USL')
                 plt.legend(legend_label)
                 plt.grid(True)
                 plt.savefig(f'{item}_{bw}.png', dpi=300)
 
-        # for item in self.df_pwr:
-        #     for mod in self.df_pwr[item]:
-        #         for bw in set(self.df_pwr[item][mod].BW):
-        #             df_pwr_item_mod = self.df_pwr[item][mod]
-        #             df_pwr_item_mod_bw = df_pwr_item_mod[df_pwr_item_mod.BW == bw]
-        #             values = range(len(df_pwr_item_mod_bw.index))
-        #             x = df_pwr_item_mod_bw.Band.astype(str).str.cat(df_pwr_item_mod_bw[['BW', 'channel']], sep='_')
-        #             plt.plot(x, df_pwr_item_mod_bw.Result, '-o')
-        #             plt.xticks(values, x, rotation=90)
-        #             plt.grid(True)
-        #             plt.show()
-        #             print(mod, bw)
 
     @staticmethod
     def _plotlines(df, item, mod, bw):
-    #def _plotlines(df, item, mod, bw, limit=None, hlines=False):
         df_item_mod = df[item][mod]
         df_item_mod_bw = df_item_mod[df_item_mod.BW == bw]
         values = range(len(df_item_mod_bw.index))
         x = df_item_mod_bw.Band.astype(str).str.cat(df_item_mod_bw[['BW', 'channel']], sep='_')
         plt.plot(values, df_item_mod_bw.Result, '-o')
-        # if hlines is True:
-        #     plt.hlines(y=limit, xmin=0, xmax=len(df_item_mod_bw.index), linewidth=2, color='r', linestyles='--')
         plt.xticks(values, x, rotation=90)
         return len(x)
+    def save2excel(self):
+        with pd.ExcelWriter('pandas_to_excel.xlsx') as writer:
+            self.df.to_excel(writer, sheet_name='raw data')
+            if PWR_EN == 1:
+                for item in pwr_items:
+                    for mod in self.pt_pwr[item]:
+                        self.pt_pwr[item][mod].to_excel(writer, sheet_name=f'Power_{mod}')
+            if ACLR_EN == 1:
+                for item in aclr_items:
+                    for mod in self.pt_aclr[item]:
+                        self.pt_aclr[item][mod].to_excel(writer, sheet_name=f'ACLR_{item}_{mod}')
+            if EVM_EN == 1:
+                for item in evm_items:
+                    for mod in self.pt_evm[item]:
+                        self.pt_evm[item][mod].to_excel(writer, sheet_name=f'EVM_{mod}')
 
-        # df_pwr_mod_bw = self.df_pwr[self.df_pwr[item][mod].BW == bw]
-        # values = range(len(df_pwr_mod_bw.index))
-        # x = df_pwr_mod_bw.astype(str).str.cat(df_pwr_mod_bw.channel, sep='_')
-        # plt.plot(values, df_pwr_mod_bw, '-o')
-        # plt.xticks(values, x, rotation=90)
-        # plt.show()
-
-        # self.df_prb = self.df_pwr['Adjacent Channel Power']['QPSK-PRB@0']
-        # self.df_prb_5M = self.df_prb[self.df_prb.BW == '5MHZ']
-        # self.df_prb_20M = self.df_prb[self.df_prb.BW == '20MHZ']
-        # x1 = self.df_prb_5M.Band.astype(str).str.cat(self.df_prb_5M.channel, sep='_')
-        #
-        #
-        # values1 = range(len(self.df_prb_5M.index))  #use. index is faster slightly
-        # values2 = range(len(self.df_prb_20M.index))
-        # plt.plot(values1, self.df_prb_5M['Result'], '-o')
-        # plt.plot(values2, self.df_prb_20M['Result'], '-o')
-
-        # plt.xticks(values1, x1, rotation=90)
-        # plt.show()
 
     def colorcode(self):
-        pass
-
-    def save_fig(self):
-        pass
-
-    def savefiles(self):
         pass
 
     @staticmethod
@@ -194,12 +159,16 @@ def main():
     csv2pt = Csv2pt(PATH, USECOLS)
     csv2pt.refresh()
     csv2pt.conditions()
-    csv2pt.pwr()
-    csv2pt.aclr()
-    csv2pt.evm()
-    # csv2pt.pwr_linechart()
-    csv2pt.aclr_linechart()
-    # csv2pt.evm_linechart()
+    if PWR_EN == 1:
+        csv2pt.pwr()
+        csv2pt.pwr_linechart()
+    if ACLR_EN == 1:
+        csv2pt.aclr()
+        csv2pt.aclr_linechart()
+    if EVM_EN == 1:
+        csv2pt.evm()
+        csv2pt.evm_linechart()
+    csv2pt.save2excel()
 
 
 if __name__ == '__main__':
