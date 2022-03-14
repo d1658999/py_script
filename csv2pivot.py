@@ -10,11 +10,11 @@ from specs import aclr_usls, evm_usls
 PATH = pathlib.Path("./")
 USECOLS = ['Band', 'Test Item', 'Ch', 'Result']
 
-#this _EN can be modified
+# this _EN can be modified
 PWR_EN = 1
 ACLR_EN = 1
-EVM_EN = 0
-MODULATIONS = ['QPSK-PRB@0', 'QPSK-FRB', '16QAM-PRB@0', '16QAM-FRB', '64MAM-FRB'] # this is can be modified to we want
+EVM_EN = 1
+MODULATIONS = ['QPSK-PRB@0', 'QPSK-FRB', '16QAM-PRB@0', '16QAM-FRB', '64QAM-FRB']  # this is can be modified to we want
 
 ITEMS = [pwr_items, aclr_items, evm_items]
 ITEMS_INDEX = {'pwr': 0, 'aclr': 1, 'evm': 2}
@@ -35,12 +35,38 @@ class Csv2pt:
         else:
             return 'M'
 
+    @staticmethod
+    def _select_items(df):
+        # global cond
+        # true_series = pd.Series([True for i in range(len(df.index))], name='Test Item')
+        # flag = 0
+        # for item in items:
+        #     for i in item:
+        #         print(item, i)
+        #         if flag == 0:
+        #             cond = df['Test Item'].str.contains(i) & true_series
+        #             flag = 1
+        #         else:
+        #             cond = cond | df['Test Item'].str.contains(i)
+        #
+        # return df[cond]
+
+
+        df = df[df['Test Item'].str.contains('6.6.2.3') |
+                df['Test Item'].str.contains('6.5.2.1')]
+
+        return df
+
+
     def refresh(self):
         for file in self.path.iterdir():
             if file.match('*.csv'):  # to find *csv file
                 # load the csv and skip the first row and the second row is the colums
                 self.df = pd.read_csv(file, on_bad_lines='skip', skiprows=[0], usecols=self.cols)
+                # self.df = pd.read_csv(file, on_bad_lines='skip', usecols=self.cols)
                 # split the Test Item by ';'
+                self.df = self._select_items(self.df)
+                print(self.df)
                 self.df[['Test Item', 'BW', 'Modulation']] = self.df['Test Item'].str.split(';', expand=True)
                 # df['BW'] = df['Test Item'].str.split(';').str[1]
 
@@ -98,12 +124,12 @@ class Csv2pt:
 
                 plt.title(item)
                 if limit is not None:
+                    print(limit[item])
                     plt.hlines(y=limit[item], xmin=0, xmax=xmax_value, linewidth=2, color='r', linestyles='--')
                     legend_label.append('USL')
                 plt.legend(legend_label)
                 plt.grid(True)
                 plt.savefig(f'{item}_{bw}.png', dpi=300)
-
 
     @staticmethod
     def _plotlines(df, item, mod, bw):
@@ -114,6 +140,7 @@ class Csv2pt:
         plt.plot(values, df_item_mod_bw.Result, '-o')
         plt.xticks(values, x, rotation=90)
         return len(x)
+
     def save2excel(self):
         with pd.ExcelWriter('pandas_to_excel.xlsx') as writer:
             self.df.to_excel(writer, sheet_name='raw data')
@@ -129,7 +156,6 @@ class Csv2pt:
                 for item in evm_items:
                     for mod in self.pt_evm[item]:
                         self.pt_evm[item][mod].to_excel(writer, sheet_name=f'EVM_{mod}')
-
 
     def colorcode(self):
         pass
