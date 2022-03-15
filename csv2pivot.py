@@ -113,7 +113,7 @@ class Csv2pt:
             for bw in set(self.df[self.df['Test Item'].str.contains(item)].BW):
                 try:
                     legend_label = []
-                    plt.figure(figsize=(20, 10))
+                    plt.figure(figsize=(20, 12))
                     xmax_value = None
                     for mod in MODULATIONS:
                         print(f'linechart is processing for {item}, {mod}, {bw}')
@@ -177,7 +177,8 @@ class Csv2pt:
                     pt_want[_item][mod] = df_want[_item][mod].pivot_table(index='Band',
                                                                           columns=['BW', 'channel'],
                                                                           values='Result',
-                                                                          aggfunc='max')
+                                                                          aggfunc='max',
+                                                                          fill_value=np.nan)
                 else:
                     print(f'{_item}, {mod} is not in the data')
         return df_want, pt_want
