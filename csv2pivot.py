@@ -15,6 +15,7 @@ PWR_EN = 1
 ACLR_EN = 1
 EVM_EN = 1
 MODULATIONS = ['QPSK-PRB@0', 'QPSK-FRB', '16QAM-PRB@0', '16QAM-FRB', '64QAM-FRB']  # this is can be modified to we want
+# MODULATIONS = ['QPSK-PRB@0', '64QAM-FRB']
 
 ITEMS = [pwr_items, aclr_items, evm_items]
 ITEMS_INDEX = {'pwr': 0, 'aclr': 1, 'evm': 2}
@@ -66,7 +67,6 @@ class Csv2pt:
                 # self.df = pd.read_csv(file, on_bad_lines='skip', usecols=self.cols)
                 # split the Test Item by ';'
                 self.df = self._select_items(self.df)
-                print(self.df)
                 self.df[['Test Item', 'BW', 'Modulation']] = self.df['Test Item'].str.split(';', expand=True)
                 # df['BW'] = df['Test Item'].str.split(';').str[1]
 
@@ -116,15 +116,13 @@ class Csv2pt:
                     plt.figure(figsize=(20, 10))
                     xmax_value = None
                     for mod in MODULATIONS:
-                        legend_label.append(bw + '_' + mod)
                         print(f'linechart is processing for {item}, {mod}, {bw}')
-                        xmax_value = self._plotlines(df_item, item, mod, bw)
+                        xmax_value,  legend_label= self._plotlines(df_item, item, mod, bw, legend_label)
                 except KeyError as err:
                     print(f'{err} is not in the raw data ')
 
                 plt.title(item)
                 if limit is not None:
-                    print(limit[item])
                     plt.hlines(y=limit[item], xmin=0, xmax=xmax_value, linewidth=2, color='r', linestyles='--')
                     legend_label.append('USL')
                 plt.legend(legend_label)
@@ -132,14 +130,18 @@ class Csv2pt:
                 plt.savefig(f'{item}_{bw}.png', dpi=300)
 
     @staticmethod
-    def _plotlines(df, item, mod, bw):
+    def _plotlines(df, item, mod, bw, legend_label):
+        global x
         df_item_mod = df[item][mod]
         df_item_mod_bw = df_item_mod[df_item_mod.BW == bw]
-        values = range(len(df_item_mod_bw.index))
-        x = df_item_mod_bw.Band.astype(str).str.cat(df_item_mod_bw[['BW', 'channel']], sep='_')
-        plt.plot(values, df_item_mod_bw.Result, '-o')
-        plt.xticks(values, x, rotation=90)
-        return len(x)
+        if df_item_mod_bw.empty is not True:
+            legend_label.append(bw + '_' + mod)
+            #print(df_item_mod_bw[['channel', 'Result']])
+            values = range(len(df_item_mod_bw.index))
+            x = df_item_mod_bw.Band.astype(str).str.cat(df_item_mod_bw[['BW', 'channel']], sep='_')
+            plt.plot(values, df_item_mod_bw.Result, '-o')
+            plt.xticks(values, x, rotation=90)
+        return len(x), legend_label
 
     def save2excel(self):
         with pd.ExcelWriter('pandas_to_excel.xlsx') as writer:
