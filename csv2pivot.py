@@ -77,6 +77,9 @@ class Csv2pt:
                     self.df.loc[self.df.Band == b, 'channel'] = self.df.loc[self.df.Band == b, 'Ch'].apply(
                         self._mch_judge, args=(mchs[b],))
 
+                #sorted by band, channel
+                self.df.sort_values(by=['Band', 'channel'], inplace=True)
+
     def conditions(self):
         # self.pwr_condition = {}
         # self.aclr_condition = {}
