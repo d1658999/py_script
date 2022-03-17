@@ -11,9 +11,9 @@ PATH = pathlib.Path("./")
 USECOLS = ['Band', 'Test Item', 'Ch', 'Result']
 
 # this _EN can be modified
-PWR_EN = 1
+PWR_EN = 0
 ACLR_EN = 1
-EVM_EN = 1
+EVM_EN = 0
 MODULATIONS = ['QPSK-PRB@0', 'QPSK-FRB', '16QAM-PRB@0', '16QAM-FRB', '64QAM-FRB']  # this is can be modified to we want
 # MODULATIONS = ['QPSK-PRB@0', '64QAM-FRB']
 
@@ -21,20 +21,25 @@ ITEMS = [pwr_items, aclr_items, evm_items]
 ITEMS_INDEX = {'pwr': 0, 'aclr': 1, 'evm': 2}
 ACLR_USLS = aclr_usls
 
+COLOR = {'yellow': 'yellow', 'green': 'green', 'red': 'red'}
+
+ACLR_LIMIT = {'USL': -36, 'LSL': -40}
 
 class Csv2pt:
-    def __init__(self, path, cols):
-        self.path = path
-        self.cols = cols
+    def __init__(self):
+        self.path = PATH
+        self.cols = USECOLS
+        self.limit = ACLR_LIMIT
+        self.color = COLOR
 
     @staticmethod
     def _mch_judge(ch, mch):
         if ch < mch:
-            return 'L'
+            return 'ch1'
         elif ch > mch:
-            return 'H'
+            return 'ch3'
         else:
-            return 'M'
+            return 'ch2'
 
     @staticmethod
     def _select_items(df):
@@ -156,14 +161,26 @@ class Csv2pt:
             if ACLR_EN == 1:
                 for item in aclr_items:
                     for mod in self.pt_aclr[item]:
+                        self.pt_aclr[item][mod] = self.pt_aclr[item][mod].style.applymap(self._colorcode, color=COLOR)
                         self.pt_aclr[item][mod].to_excel(writer, sheet_name=f'ACLR_{item}_{mod}')
             if EVM_EN == 1:
                 for item in evm_items:
                     for mod in self.pt_evm[item]:
                         self.pt_evm[item][mod].to_excel(writer, sheet_name=f'EVM_{mod}')
 
-    def colorcode(self):
-        pass
+
+    def _colorcode(self, cell, color):
+        if cell > self.limit['USL']:
+            return f'background-color: {color["red"]}'
+        elif cell < self.limit['USL'] and cell > self.limit['LSL']:
+            return f'background-color: {color["yellow"]}'
+        elif cell < self.limit['LSL']:
+            return f'background-color: {color["green"]}'
+        else:
+            return None
+
+
+
 
     @staticmethod
     def _csv2pt(df, condition, index):
@@ -188,7 +205,7 @@ class Csv2pt:
 
 
 def main():
-    csv2pt = Csv2pt(PATH, USECOLS)
+    csv2pt = Csv2pt()
     csv2pt.refresh()
     csv2pt.conditions()
     if PWR_EN == 1:
