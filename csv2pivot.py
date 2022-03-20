@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-from ltemch import mchs
+from ltemch_v2 import mchs
 from test_items import pwr_items, aclr_items, evm_items
 from specs import aclr_usls, evm_usls
 
@@ -11,9 +11,9 @@ PATH = pathlib.Path("./")
 USECOLS = ['Band', 'Test Item', 'Ch', 'Result']
 
 # this _EN can be modified
-PWR_EN = 0
+PWR_EN = 1
 ACLR_EN = 1
-EVM_EN = 0
+EVM_EN = 1
 MODULATIONS = ['QPSK-PRB@0', 'QPSK-FRB', '16QAM-PRB@0', '16QAM-FRB', '64QAM-FRB']  # this is can be modified to we want
 # MODULATIONS = ['QPSK-PRB@0', '64QAM-FRB']
 
@@ -24,6 +24,7 @@ ACLR_USLS = aclr_usls
 COLOR = {'yellow': 'yellow', 'green': 'green', 'red': 'red'}
 
 ACLR_LIMIT = {'USL': -36, 'LSL': -40}
+
 
 class Csv2pt:
     def __init__(self):
@@ -57,12 +58,10 @@ class Csv2pt:
         #
         # return df[cond]
 
-
         df = df[df['Test Item'].str.contains('6.6.2.3') |
                 df['Test Item'].str.contains('6.5.2.1')]
 
         return df
-
 
     def refresh(self):
         for file in self.path.iterdir():
@@ -80,9 +79,9 @@ class Csv2pt:
 
                 for b in set(self.df.Band):
                     self.df.loc[self.df.Band == b, 'channel'] = self.df.loc[self.df.Band == b, 'Ch'].apply(
-                        self._mch_judge, args=(mchs[b],))
+                        self._mch_judge, args=(mchs(b),))
 
-                #sorted by band, channel
+                # sorted by band, channel
                 self.df.sort_values(by=['Band', 'channel'], inplace=True)
 
     def conditions(self):
@@ -125,7 +124,7 @@ class Csv2pt:
                     xmax_value = None
                     for mod in MODULATIONS:
                         print(f'linechart is processing for {item}, {mod}, {bw}')
-                        xmax_value,  legend_label= self._plotlines(df_item, item, mod, bw, legend_label)
+                        xmax_value, legend_label = self._plotlines(df_item, item, mod, bw, legend_label)
                 except KeyError as err:
                     print(f'{err} is not in the raw data ')
 
@@ -144,7 +143,7 @@ class Csv2pt:
         df_item_mod_bw = df_item_mod[df_item_mod.BW == bw]
         if df_item_mod_bw.empty is not True:
             legend_label.append(bw + '_' + mod)
-            #print(df_item_mod_bw[['channel', 'Result']])
+            # print(df_item_mod_bw[['channel', 'Result']])
             values = range(len(df_item_mod_bw.index))
             x = df_item_mod_bw.Band.astype(str).str.cat(df_item_mod_bw[['BW', 'channel']], sep='_')
             plt.plot(values, df_item_mod_bw.Result, '-o')
@@ -161,26 +160,22 @@ class Csv2pt:
             if ACLR_EN == 1:
                 for item in aclr_items:
                     for mod in self.pt_aclr[item]:
-                        self.pt_aclr[item][mod] = self.pt_aclr[item][mod].style.applymap(self._colorcode, color=COLOR)
+                        self.pt_aclr[item][mod] = self.pt_aclr[item][mod].style.applymap(self._color, color=COLOR)
                         self.pt_aclr[item][mod].to_excel(writer, sheet_name=f'ACLR_{item}_{mod}')
             if EVM_EN == 1:
                 for item in evm_items:
                     for mod in self.pt_evm[item]:
                         self.pt_evm[item][mod].to_excel(writer, sheet_name=f'EVM_{mod}')
 
-
-    def _colorcode(self, cell, color):
+    def _color(self, cell, color):
         if cell > self.limit['USL']:
             return f'background-color: {color["red"]}'
-        elif cell < self.limit['USL'] and cell > self.limit['LSL']:
+        elif self.limit['USL'] > cell > self.limit['LSL']:
             return f'background-color: {color["yellow"]}'
         elif cell < self.limit['LSL']:
             return f'background-color: {color["green"]}'
         else:
             return None
-
-
-
 
     @staticmethod
     def _csv2pt(df, condition, index):
