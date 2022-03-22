@@ -8,7 +8,7 @@ def mchs(band):
 
 def main():
     # test
-    band = '5.0'
+    band = 5.0
     print(band, mchs(band))
 
 if __name__ == '__main__':
