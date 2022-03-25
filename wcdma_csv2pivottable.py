@@ -110,33 +110,35 @@ class Csv2pt:
     def _linechart_save(self, want_items, df_item, limit=None):
         global xmax_value, legend_label
         for item in want_items:
-            print(item)
-            try:
+            print(self.df[self.df['Test Item'].str.contains(item)].empty)
+            if self.df[self.df['Test Item'].str.contains(item)].empty is not True:
                 legend_label = []
                 plt.figure(figsize=(20, 12))
                 xmax_value = None
                 print(f'linechart is processing for {item}')
                 xmax_value, legend_label = self._plotlines(df_item, item, legend_label)
-            except KeyError as err:
-                print(f'{err} is not in the raw data ')
 
-            plt.title(item)
-            if limit is not None:
-                plt.hlines(y=limit[item], xmin=0, xmax=xmax_value, linewidth=2, color='r', linestyles='--')
-                legend_label.append('USL')
-            plt.legend(legend_label)
-            plt.grid(True)
-            plt.savefig(f'{item}.png', dpi=300)
+                plt.title(item)
+                if limit is not None:
+                    plt.hlines(y=limit[item], xmin=0, xmax=xmax_value, linewidth=2, color='r', linestyles='--')
+                    legend_label.append('USL')
+                plt.legend(legend_label)
+                plt.grid(True)
+                plt.savefig(f'{item}.png', dpi=300)
+
+            else:
+                print(f'{item} is not in the raw data ')
+
+
 
     @staticmethod
     def _plotlines(df, item, legend_label):
         x = []
         df_item = df[item]
-        print(df_item)
         # df_item_mod_bw = df_item_mod[df_item_mod.BW == bw]
         # print(df_item_mod_bw)
         if df_item.empty is not True:
-            legend_label.append('item')
+            legend_label.append(item)
             # print(df_item_mod_bw[['channel', 'Result']])
             values = range(len(df_item.index))
             x = df_item.Band.astype(str).str.cat(df_item[['channel']], sep='_')
@@ -152,22 +154,26 @@ class Csv2pt:
             print('start to save to excel')
             if PWR_EN == 1:
                 for item in pwr_items:
-                    self.pt_pwr[item] = self.pt_pwr[item].style.applymap(self._pwr_color, color=COLOR,
-                                                                         item=item,
-                                                                         bands=self.pt_pwr[item].index)
-                    self.pt_pwr[item].to_excel(writer, sheet_name=f'Power')
+                    if self.pt_pwr[item].empty is not True:
+                        self.pt_pwr[item] = self.pt_pwr[item].style.applymap(self._pwr_color, color=COLOR,
+                                                                             item=item,
+                                                                             bands=self.pt_pwr[item].index)
+                        self.pt_pwr[item].to_excel(writer, sheet_name=f'Power')
+
             if ACLR_EN == 1:
                 for item in aclr_items:
                     # for mod in self.pt_aclr[item]:
-                    self.pt_aclr[item] = self.pt_aclr[item].style.applymap(self._aclr_evm_color,
+                    if self.pt_aclr[item].empty is not True:
+                        self.pt_aclr[item] = self.pt_aclr[item].style.applymap(self._aclr_evm_color,
                                                                            color=COLOR, item=item)
-                    self.pt_aclr[item].to_excel(writer, sheet_name=f'ACLR')
+                        self.pt_aclr[item].to_excel(writer, sheet_name=f'ACLR')
             if EVM_EN == 1:
                 for item in evm_items:
                     # for mod in self.pt_evm[item]:
-                    self.pt_evm[item] = self.pt_evm[item].style.applymap(self._aclr_evm_color,
+                    if self.pt_evm[item].empty is not True:
+                        self.pt_evm[item] = self.pt_evm[item].style.applymap(self._aclr_evm_color,
                                                                          color=COLOR, item=item)
-                    self.pt_evm[item].to_excel(writer, sheet_name=f'EVM')
+                        self.pt_evm[item].to_excel(writer, sheet_name=f'EVM')
 
     def _aclr_evm_color(self, cell, color, item):
         if item in ['ACLR']:
