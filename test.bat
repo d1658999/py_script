@@ -1,1 +1,0 @@
-start cmd /k .\venv\Scripts\python.exe .\csv2pivottable.py

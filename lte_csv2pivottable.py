@@ -3,10 +3,10 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-from ltemch_v2 import mchs
-from power_target_v2 import power_target
-from test_items import pwr_items, aclr_items, evm_items
-from specs import aclr_usls, evm_usls
+from lte_mch_v2 import mchs
+from lte_power_target_v2 import power_target
+from lte_test_items import pwr_items, aclr_items, evm_items
+from lte_specs import aclr_usls, evm_usls
 
 PATH = pathlib.Path("./")
 USECOLS = ['Band', 'Test Item', 'Ch', 'Result']
@@ -85,7 +85,7 @@ class Csv2pt:
                     self.df.loc[self.df.Band == b, 'channel'] = self.df.loc[self.df.Band == b, 'Ch'].apply(
                         self._mch_judge, args=(mchs(b),))
 
-                # force the the Result type into float due to some raw datas are str
+                # force the Result type into float due to some raw datas are str
                 self.df['Result'] = self.df['Result'].astype('float')
 
                 # sorted by band, channel

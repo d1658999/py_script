@@ -1,0 +1,129 @@
+System1 name:   WCDMA SYSTEM MEASUREMENT,,,,,,,,,,,,,,Test plan path: C:\Claire\Anritsu_20190624\Report\2022_01_18\WB5,8_18_38_16_P.txt
+ System,Band,Test Item,Ch,Cell Power,Lower,Upper,Unit,Result,Judgement,,,,,PLAN NAME:No Plan Loaded
+ WCDMA,5,5.2 Max Output Power,4133,-93.0,20.3,25.7,dBm,24.49,PASS,,,,,PLAN START TIME:2022-01-18 18:37:41
+ WCDMA,5,5.3 Frequency Error,4133,-93.0,-0.1,0.1,PPM,0.00,PASS,,,,,RF INSTRUMENT:MT8820C
+ WCDMA,5,5.8 Occupied Bandwidth,4133,-93.0,None,5,MHz,4.17,PASS,,,,,------------------------------------------
+ WCDMA,5,5.9 Spectrum emission mask,4133,-93.0,None,None,None,None,PASS,,,,,Cable Loss:Freq[MHz]In/Out[dB]
+ WCDMA,5,5.9 SEM Margin Value L1,4133,-93.0,0,None,dB,16.24,PASS,,,,,            	600		0.6/0.6/0.6
+ WCDMA,5,5.9 SEM Margin Value L2,4133,-93.0,0,None,dB,17.34,PASS,,,,,            	900		0.6/0.6/0.6
+ WCDMA,5,5.9 SEM Margin Value L3,4133,-93.0,0,None,dB,14.39,PASS,,,,,            	1700		0.8/0.8/0.8
+ WCDMA,5,5.9 SEM Margin Value L4,4133,-93.0,0,None,dB,14.35,PASS,,,,,            	2100		0.8/0.8/0.8
+ WCDMA,5,5.9 SEM Margin Value U1,4133,-93.0,0,None,dB,16.28,PASS,,,,,            	2200		1.0/1.0/1.0
+ WCDMA,5,5.9 SEM Margin Value U2,4133,-93.0,0,None,dB,16.17,PASS,,,,,            	2700		1.0/1.0/1.0
+ WCDMA,5,5.9 SEM Margin Value U3,4133,-93.0,0,None,dB,15.90,PASS,,,,, Antenna Configuration:	
+ WCDMA,5,5.9 SEM Margin Value U4,4133,-93.0,0,None,dB,15.85,PASS,,,,, DUT IMEI:		3506952001239501
+ WCDMA,5,5.10 ACLR@-10MHz,4133,-93.0,None,-42.2,dB,-58.66,PASS,,,,, Total item count:	126
+ WCDMA,5,5.10 ACLR@-5MHz,4133,-93.0,None,-32.2,dB,-47.07,PASS,,,,, Pass item count:	126
+ WCDMA,5,5.10 ACLR@5MHz,4133,-93.0,None,-32.2,dB,-46.69,PASS,,,,, Fail item count:	0
+ WCDMA,5,5.10 ACLR@10MHz,4133,-93.0,None,-42.2,dB,-59.98,PASS,,,,, INC item count:	0
+ WCDMA,5,5.13.1 EVM@Max Power,4133,-93.0,None,17.5,RMS,3.14,PASS,,,,,------------------------------------------
+ WCDMA,5,5.13.2 PCDE@Max Power,4133,-93.0,None,-15,dB,-48.11,PASS,,,,,PLAN END TIME:2022-01-18 18:38:13
+ WCDMA,5,5.13.1 EVM@-18dBm,4133,-93.0,None,17.5,RMS,3.77,PASS,,,,,PLAN COST TIME:032 sec 
+ WCDMA,5,5.13.2 PCDE@-18dBm,4133,-93.0,None,-15,dB,-45.82,PASS,,,,,Auto Test Software Version: Ver : 1.6.00-190624-M190408 / Model: MT8820C; MT8820C Info.: 6201381739, 23.08S #001
+ WCDMA,5,5.4.3 Min output Power,4133,-93.0,None,-49,dBm,-52.70,PASS,,,,,AFilter (1.0.0.8)
+ WCDMA,5,5.2 Max Output Power,4175,-93.0,20.3,25.7,dBm,24.65,PASS
+ WCDMA,5,5.3 Frequency Error,4175,-93.0,-0.1,0.1,PPM,0.00,PASS
+ WCDMA,5,5.8 Occupied Bandwidth,4175,-93.0,None,5,MHz,4.18,PASS
+ WCDMA,5,5.9 Spectrum emission mask,4175,-93.0,None,None,None,None,PASS
+ WCDMA,5,5.9 SEM Margin Value L1,4175,-93.0,0,None,dB,16.17,PASS
+ WCDMA,5,5.9 SEM Margin Value L2,4175,-93.0,0,None,dB,15.89,PASS
+ WCDMA,5,5.9 SEM Margin Value L3,4175,-93.0,0,None,dB,14.89,PASS
+ WCDMA,5,5.9 SEM Margin Value L4,4175,-93.0,0,None,dB,14.85,PASS
+ WCDMA,5,5.9 SEM Margin Value U1,4175,-93.0,0,None,dB,16.37,PASS
+ WCDMA,5,5.9 SEM Margin Value U2,4175,-93.0,0,None,dB,15.78,PASS
+ WCDMA,5,5.9 SEM Margin Value U3,4175,-93.0,0,None,dB,15.47,PASS
+ WCDMA,5,5.9 SEM Margin Value U4,4175,-93.0,0,None,dB,15.44,PASS
+ WCDMA,5,5.10 ACLR@-10MHz,4175,-93.0,None,-42.2,dB,-59.64,PASS
+ WCDMA,5,5.10 ACLR@-5MHz,4175,-93.0,None,-32.2,dB,-45.87,PASS
+ WCDMA,5,5.10 ACLR@5MHz,4175,-93.0,None,-32.2,dB,-46.29,PASS
+ WCDMA,5,5.10 ACLR@10MHz,4175,-93.0,None,-42.2,dB,-59.14,PASS
+ WCDMA,5,5.13.1 EVM@Max Power,4175,-93.0,None,17.5,RMS,2.55,PASS
+ WCDMA,5,5.13.2 PCDE@Max Power,4175,-93.0,None,-15,dB,-49.99,PASS
+ WCDMA,5,5.13.1 EVM@-18dBm,4175,-93.0,None,17.5,RMS,3.40,PASS
+ WCDMA,5,5.13.2 PCDE@-18dBm,4175,-93.0,None,-15,dB,-47.22,PASS
+ WCDMA,5,5.4.3 Min output Power,4175,-93.0,None,-49,dBm,-52.74,PASS
+ WCDMA,5,5.2 Max Output Power,4232,-93.0,20.3,25.7,dBm,24.64,PASS
+ WCDMA,5,5.3 Frequency Error,4232,-93.0,-0.1,0.1,PPM,0.00,PASS
+ WCDMA,5,5.8 Occupied Bandwidth,4232,-93.0,None,5,MHz,4.17,PASS
+ WCDMA,5,5.9 Spectrum emission mask,4232,-93.0,None,None,None,None,PASS
+ WCDMA,5,5.9 SEM Margin Value L1,4232,-93.0,0,None,dB,15.73,PASS
+ WCDMA,5,5.9 SEM Margin Value L2,4232,-93.0,0,None,dB,17.60,PASS
+ WCDMA,5,5.9 SEM Margin Value L3,4232,-93.0,0,None,dB,13.44,PASS
+ WCDMA,5,5.9 SEM Margin Value L4,4232,-93.0,0,None,dB,13.41,PASS
+ WCDMA,5,5.9 SEM Margin Value U1,4232,-93.0,0,None,dB,15.64,PASS
+ WCDMA,5,5.9 SEM Margin Value U2,4232,-93.0,0,None,dB,15.72,PASS
+ WCDMA,5,5.9 SEM Margin Value U3,4232,-93.0,0,None,dB,20.18,PASS
+ WCDMA,5,5.9 SEM Margin Value U4,4232,-93.0,0,None,dB,19.61,PASS
+ WCDMA,5,5.10 ACLR@-10MHz,4232,-93.0,None,-42.2,dB,-57.76,PASS
+ WCDMA,5,5.10 ACLR@-5MHz,4232,-93.0,None,-32.2,dB,-47.03,PASS
+ WCDMA,5,5.10 ACLR@5MHz,4232,-93.0,None,-32.2,dB,-46.43,PASS
+ WCDMA,5,5.10 ACLR@10MHz,4232,-93.0,None,-42.2,dB,-64.86,PASS
+ WCDMA,5,5.13.1 EVM@Max Power,4232,-93.0,None,17.5,RMS,4.42,PASS
+ WCDMA,5,5.13.2 PCDE@Max Power,4232,-93.0,None,-15,dB,-44.18,PASS
+ WCDMA,5,5.13.1 EVM@-18dBm,4232,-93.0,None,17.5,RMS,5.05,PASS
+ WCDMA,5,5.13.2 PCDE@-18dBm,4232,-93.0,None,-15,dB,-43.02,PASS
+ WCDMA,5,5.4.3 Min output Power,4232,-93.0,None,-49,dBm,-52.72,PASS
+ WCDMA,8,5.2 Max Output Power,2713,-93.0,20.3,25.7,dBm,24.68,PASS
+ WCDMA,8,5.3 Frequency Error,2713,-93.0,-0.1,0.1,PPM,0.00,PASS
+ WCDMA,8,5.8 Occupied Bandwidth,2713,-93.0,None,5,MHz,4.18,PASS
+ WCDMA,8,5.9 Spectrum emission mask,2713,-93.0,None,None,None,None,PASS
+ WCDMA,8,5.9 SEM Margin Value L1,2713,-93.0,0,None,dB,15.31,PASS
+ WCDMA,8,5.9 SEM Margin Value L2,2713,-93.0,0,None,dB,17.71,PASS
+ WCDMA,8,5.9 SEM Margin Value L3,2713,-93.0,0,None,dB,18.20,PASS
+ WCDMA,8,5.9 SEM Margin Value L4,2713,-93.0,0,None,dB,18.17,PASS
+ WCDMA,8,5.9 SEM Margin Value U1,2713,-93.0,0,None,dB,15.73,PASS
+ WCDMA,8,5.9 SEM Margin Value U2,2713,-93.0,0,None,dB,15.16,PASS
+ WCDMA,8,5.9 SEM Margin Value U3,2713,-93.0,0,None,dB,13.55,PASS
+ WCDMA,8,5.9 SEM Margin Value U4,2713,-93.0,0,None,dB,13.51,PASS
+ WCDMA,8,5.10 ACLR@-10MHz,2713,-93.0,None,-42.2,dB,-65.14,PASS
+ WCDMA,8,5.10 ACLR@-5MHz,2713,-93.0,None,-32.2,dB,-47.06,PASS
+ WCDMA,8,5.10 ACLR@5MHz,2713,-93.0,None,-32.2,dB,-45.45,PASS
+ WCDMA,8,5.10 ACLR@10MHz,2713,-93.0,None,-42.2,dB,-58.20,PASS
+ WCDMA,8,5.13.1 EVM@Max Power,2713,-93.0,None,17.5,RMS,2.11,PASS
+ WCDMA,8,5.13.2 PCDE@Max Power,2713,-93.0,None,-15,dB,-50.93,PASS
+ WCDMA,8,5.13.1 EVM@-18dBm,2713,-93.0,None,17.5,RMS,2.39,PASS
+ WCDMA,8,5.13.2 PCDE@-18dBm,2713,-93.0,None,-15,dB,-49.77,PASS
+ WCDMA,8,5.4.3 Min output Power,2713,-93.0,None,-49,dBm,-53.54,PASS
+ WCDMA,8,5.2 Max Output Power,2788,-93.0,20.3,25.7,dBm,24.72,PASS
+ WCDMA,8,5.3 Frequency Error,2788,-93.0,-0.1,0.1,PPM,0.00,PASS
+ WCDMA,8,5.8 Occupied Bandwidth,2788,-93.0,None,5,MHz,4.17,PASS
+ WCDMA,8,5.9 Spectrum emission mask,2788,-93.0,None,None,None,None,PASS
+ WCDMA,8,5.9 SEM Margin Value L1,2788,-93.0,0,None,dB,15.20,PASS
+ WCDMA,8,5.9 SEM Margin Value L2,2788,-93.0,0,None,dB,13.10,PASS
+ WCDMA,8,5.9 SEM Margin Value L3,2788,-93.0,0,None,dB,12.95,PASS
+ WCDMA,8,5.9 SEM Margin Value L4,2788,-93.0,0,None,dB,12.91,PASS
+ WCDMA,8,5.9 SEM Margin Value U1,2788,-93.0,0,None,dB,12.41,PASS
+ WCDMA,8,5.9 SEM Margin Value U2,2788,-93.0,0,None,dB,12.20,PASS
+ WCDMA,8,5.9 SEM Margin Value U3,2788,-93.0,0,None,dB,12.82,PASS
+ WCDMA,8,5.9 SEM Margin Value U4,2788,-93.0,0,None,dB,12.78,PASS
+ WCDMA,8,5.10 ACLR@-10MHz,2788,-93.0,None,-42.2,dB,-58.11,PASS
+ WCDMA,8,5.10 ACLR@-5MHz,2788,-93.0,None,-32.2,dB,-43.59,PASS
+ WCDMA,8,5.10 ACLR@5MHz,2788,-93.0,None,-32.2,dB,-43.02,PASS
+ WCDMA,8,5.10 ACLR@10MHz,2788,-93.0,None,-42.2,dB,-57.28,PASS
+ WCDMA,8,5.13.1 EVM@Max Power,2788,-93.0,None,17.5,RMS,2.90,PASS
+ WCDMA,8,5.13.2 PCDE@Max Power,2788,-93.0,None,-15,dB,-48.79,PASS
+ WCDMA,8,5.13.1 EVM@-18dBm,2788,-93.0,None,17.5,RMS,4.19,PASS
+ WCDMA,8,5.13.2 PCDE@-18dBm,2788,-93.0,None,-15,dB,-44.69,PASS
+ WCDMA,8,5.4.3 Min output Power,2788,-93.0,None,-49,dBm,-53.48,PASS
+ WCDMA,8,5.2 Max Output Power,2862,-93.0,20.3,25.7,dBm,24.76,PASS
+ WCDMA,8,5.3 Frequency Error,2862,-93.0,-0.1,0.1,PPM,0.00,PASS
+ WCDMA,8,5.8 Occupied Bandwidth,2862,-93.0,None,5,MHz,4.17,PASS
+ WCDMA,8,5.9 Spectrum emission mask,2862,-93.0,None,None,None,None,PASS
+ WCDMA,8,5.9 SEM Margin Value L1,2862,-93.0,0,None,dB,13.27,PASS
+ WCDMA,8,5.9 SEM Margin Value L2,2862,-93.0,0,None,dB,16.25,PASS
+ WCDMA,8,5.9 SEM Margin Value L3,2862,-93.0,0,None,dB,13.44,PASS
+ WCDMA,8,5.9 SEM Margin Value L4,2862,-93.0,0,None,dB,13.39,PASS
+ WCDMA,8,5.9 SEM Margin Value U1,2862,-93.0,0,None,dB,12.04,PASS
+ WCDMA,8,5.9 SEM Margin Value U2,2862,-93.0,0,None,dB,12.48,PASS
+ WCDMA,8,5.9 SEM Margin Value U3,2862,-93.0,0,None,dB,19.16,PASS
+ WCDMA,8,5.9 SEM Margin Value U4,2862,-93.0,0,None,dB,19.13,PASS
+ WCDMA,8,5.10 ACLR@-10MHz,2862,-93.0,None,-42.2,dB,-58.20,PASS
+ WCDMA,8,5.10 ACLR@-5MHz,2862,-93.0,None,-32.2,dB,-45.56,PASS
+ WCDMA,8,5.10 ACLR@5MHz,2862,-93.0,None,-32.2,dB,-43.20,PASS
+ WCDMA,8,5.10 ACLR@10MHz,2862,-93.0,None,-42.2,dB,-64.48,PASS
+ WCDMA,8,5.13.1 EVM@Max Power,2862,-93.0,None,17.5,RMS,3.85,PASS
+ WCDMA,8,5.13.2 PCDE@Max Power,2862,-93.0,None,-15,dB,-45.56,PASS
+ WCDMA,8,5.13.1 EVM@-18dBm,2862,-93.0,None,17.5,RMS,5.80,PASS
+ WCDMA,8,5.13.2 PCDE@-18dBm,2862,-93.0,None,-15,dB,-41.33,PASS
+ WCDMA,8,5.4.3 Min output Power,2862,-93.0,None,-49,dBm,-53.53,PASS
+

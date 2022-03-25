@@ -1,0 +1,1113 @@
+System1 name:   WCDMA SYSTEM MEASUREMENT,,,,,,,,,,,,,,Test plan path: C:\ANRITSU_20190624\Report\2021_12_10\MB_19_47_17_Stop.txt
+ System,Band,Test Item,Ch,Cell Power,Lower,Upper,Unit,Result,Judgement,,,,,PLAN NAME:New Plan
+ WCDMA,1,5.2 Max Output Power,9613,-106.0,20.3,25.7,dBm,24.68,PASS,,,,,PLAN START TIME:2021-12-10 18:49:39
+ WCDMA,1,5.3 Frequency Error,9613,-106.0,-0.1,0.1,PPM,0.00,PASS,,,,,RF INSTRUMENT:MT8820C
+ WCDMA,1,5.8 Occupied Bandwidth,9613,-106.0,None,5,MHz,4.16,PASS,,,,,------------------------------------------
+ WCDMA,1,5.9 Spectrum emission mask,9613,-106.0,None,None,None,None,PASS,,,,,Cable Loss:Freq[MHz]In/Out[dB]
+ WCDMA,1,5.9 SEM Margin Value L1,9613,-106.0,0,None,dB,16.65,PASS,,,,,            	600		0.4/0.4/0.4
+ WCDMA,1,5.9 SEM Margin Value L2,9613,-106.0,0,None,dB,16.68,PASS,,,,,            	850		0.5/0.5/0.5
+ WCDMA,1,5.9 SEM Margin Value L3,9613,-106.0,0,None,dB,13.47,PASS,,,,,            	960		0.6/0.6/0.6
+ WCDMA,1,5.9 SEM Margin Value L4,9613,-106.0,0,None,dB,13.43,PASS,,,,,            	1450		0.7/0.7/0.7
+ WCDMA,1,5.9 SEM Margin Value U1,9613,-106.0,0,None,dB,15.87,PASS,,,,,            	1500		0.7/0.7/0.7
+ WCDMA,1,5.9 SEM Margin Value U2,9613,-106.0,0,None,dB,15.36,PASS,,,,,            	1700		0.8/0.8/0.8
+ WCDMA,1,5.9 SEM Margin Value U3,9613,-106.0,0,None,dB,9.89,PASS,,,,,            	1800		0.8/0.8/0.8
+ WCDMA,1,5.9 SEM Margin Value U4,9613,-106.0,0,None,dB,9.60,PASS,,,,,            	1900		0.9/0.9/0.9
+ WCDMA,1,5.10 ACLR@-10MHz,9613,-106.0,None,-42.2,dB,-57.46,PASS,,,,,            	2100		0.9/0.9/0.9
+ WCDMA,1,5.10 ACLR@-5MHz,9613,-106.0,None,-32.2,dB,-46.64,PASS,,,,,            	2200		1.0/1.0/1.0
+ WCDMA,1,5.10 ACLR@5MHz,9613,-106.0,None,-32.2,dB,-45.80,PASS,,,,,            	2300		1.0/1.0/1.0
+ WCDMA,1,5.10 ACLR@10MHz,9613,-106.0,None,-42.2,dB,-52.90,PASS,,,,,            	2700		1.0/1.0/1.0
+ WCDMA,1,5.13.1 EVM@Max Power,9613,-106.0,None,17.5,RMS,1.38,PASS,,,,, Antenna Configuration:	
+ WCDMA,1,Origin Offset@Max Power,9613,-106.0,None,None,dB,-64.02,None,,,,, DUT IMEI:		NA
+ WCDMA,1,Phase Error@Max Power,9613,-106.0,None,None,deg_rms,0.72,None,,,,, Total item count:	954
+ WCDMA,1,Magnitude Error@Max Power,9613,-106.0,None,None,%_rms,0.57,None,,,,, Pass item count:	405
+ WCDMA,1,IQ Imbalance@Max Power,9613,-106.0,None,None,%_I/Q,100.12,None,,,,, Fail item count:	549
+ WCDMA,1,Timing Error -@Max Power,9613,-106.0,None,None,chip,0.6,None,,,,, INC item count:	0
+ WCDMA,1,5.13.2 PCDE@Max Power,9613,-106.0,None,-15,dB,-48.08,PASS,,,,,------------------------------------------
+ WCDMA,1,5.13.1 EVM@-18dBm,9613,-106.0,None,17.5,RMS,3.05,PASS,,,,,PLAN END TIME:2021-12-10 19:47:15
+ WCDMA,1,Origin Offset@-18dBm,9613,-106.0,None,None,dB,-59.06,None,,,,,PLAN COST TIME:057 min 36 sec 
+ WCDMA,1,Phase Error@-18dBm,9613,-106.0,None,None,deg_rms,1.14,None,,,,,Auto Test Software Version: Ver : 1.6.00-190624-M190408 / Model: MT8820C; MT8820C Info.: 6201525724, 23.08S #001
+ WCDMA,1,Magnitude Error@-18dBm,9613,-106.0,None,None,%_rms,2.30,None,,,,,AFilter (1.0.0.8)
+ WCDMA,1,IQ Imbalance@-18dBm,9613,-106.0,None,None,%_I/Q,100.17,None
+ WCDMA,1,Timing Error -@-18dBm,9613,-106.0,None,None,chip,0.5,None
+ WCDMA,1,5.13.2 PCDE@-18dBm,9613,-106.0,None,-15,dB,-47.22,PASS
+ WCDMA,1,5.4.3 Min output Power,9613,-93.0,None,-49,dBm,-53.00,PASS
+ WCDMA,1,5.2 Max Output Power,9750,-106.0,20.3,25.7,dBm,24.55,PASS
+ WCDMA,1,5.3 Frequency Error,9750,-106.0,-0.1,0.1,PPM,0.00,PASS
+ WCDMA,1,5.8 Occupied Bandwidth,9750,-106.0,None,5,MHz,4.17,PASS
+ WCDMA,1,5.9 Spectrum emission mask,9750,-106.0,None,None,None,None,PASS
+ WCDMA,1,5.9 SEM Margin Value L1,9750,-106.0,0,None,dB,19.44,PASS
+ WCDMA,1,5.9 SEM Margin Value L2,9750,-106.0,0,None,dB,18.19,PASS
+ WCDMA,1,5.9 SEM Margin Value L3,9750,-106.0,0,None,dB,12.63,PASS
+ WCDMA,1,5.9 SEM Margin Value L4,9750,-106.0,0,None,dB,12.59,PASS
+ WCDMA,1,5.9 SEM Margin Value U1,9750,-106.0,0,None,dB,16.93,PASS
+ WCDMA,1,5.9 SEM Margin Value U2,9750,-106.0,0,None,dB,16.26,PASS
+ WCDMA,1,5.9 SEM Margin Value U3,9750,-106.0,0,None,dB,9.79,PASS
+ WCDMA,1,5.9 SEM Margin Value U4,9750,-106.0,0,None,dB,9.74,PASS
+ WCDMA,1,5.10 ACLR@-10MHz,9750,-106.0,None,-42.2,dB,-56.75,PASS
+ WCDMA,1,5.10 ACLR@-5MHz,9750,-106.0,None,-32.2,dB,-47.87,PASS
+ WCDMA,1,5.10 ACLR@5MHz,9750,-106.0,None,-32.2,dB,-46.38,PASS
+ WCDMA,1,5.10 ACLR@10MHz,9750,-106.0,None,-42.2,dB,-53.40,PASS
+ WCDMA,1,5.13.1 EVM@Max Power,9750,-106.0,None,17.5,RMS,1.47,PASS
+ WCDMA,1,Origin Offset@Max Power,9750,-106.0,None,None,dB,-62.60,None
+ WCDMA,1,Phase Error@Max Power,9750,-106.0,None,None,deg_rms,0.70,None
+ WCDMA,1,Magnitude Error@Max Power,9750,-106.0,None,None,%_rms,0.83,None
+ WCDMA,1,IQ Imbalance@Max Power,9750,-106.0,None,None,%_I/Q,100.10,None
+ WCDMA,1,Timing Error -@Max Power,9750,-106.0,None,None,chip,0.5,None
+ WCDMA,1,5.13.2 PCDE@Max Power,9750,-106.0,None,-15,dB,-47.80,PASS
+ WCDMA,1,5.13.1 EVM@-18dBm,9750,-106.0,None,17.5,RMS,3.43,PASS
+ WCDMA,1,Origin Offset@-18dBm,9750,-106.0,None,None,dB,-59.86,None
+ WCDMA,1,Phase Error@-18dBm,9750,-106.0,None,None,deg_rms,1.25,None
+ WCDMA,1,Magnitude Error@-18dBm,9750,-106.0,None,None,%_rms,2.66,None
+ WCDMA,1,IQ Imbalance@-18dBm,9750,-106.0,None,None,%_I/Q,99.98,None
+ WCDMA,1,Timing Error -@-18dBm,9750,-106.0,None,None,chip,0.5,None
+ WCDMA,1,5.13.2 PCDE@-18dBm,9750,-106.0,None,-15,dB,-46.43,PASS
+ WCDMA,1,5.4.3 Min output Power,9750,-93.0,None,-49,dBm,-53.25,PASS
+ WCDMA,1,5.2 Max Output Power,9887,-106.0,20.3,25.7,dBm,24.69,PASS
+ WCDMA,1,5.3 Frequency Error,9887,-106.0,-0.1,0.1,PPM,0.00,PASS
+ WCDMA,1,5.8 Occupied Bandwidth,9887,-106.0,None,5,MHz,4.18,PASS
+ WCDMA,1,5.9 Spectrum emission mask,9887,-106.0,None,None,None,None,PASS
+ WCDMA,1,5.9 SEM Margin Value L1,9887,-106.0,0,None,dB,17.53,PASS
+ WCDMA,1,5.9 SEM Margin Value L2,9887,-106.0,0,None,dB,16.42,PASS
+ WCDMA,1,5.9 SEM Margin Value L3,9887,-106.0,0,None,dB,12.23,PASS
+ WCDMA,1,5.9 SEM Margin Value L4,9887,-106.0,0,None,dB,12.19,PASS
+ WCDMA,1,5.9 SEM Margin Value U1,9887,-106.0,0,None,dB,14.90,PASS
+ WCDMA,1,5.9 SEM Margin Value U2,9887,-106.0,0,None,dB,14.88,PASS
+ WCDMA,1,5.9 SEM Margin Value U3,9887,-106.0,0,None,dB,9.65,PASS
+ WCDMA,1,5.9 SEM Margin Value U4,9887,-106.0,0,None,dB,9.42,PASS
+ WCDMA,1,5.10 ACLR@-10MHz,9887,-106.0,None,-42.2,dB,-56.05,PASS
+ WCDMA,1,5.10 ACLR@-5MHz,9887,-106.0,None,-32.2,dB,-46.46,PASS
+ WCDMA,1,5.10 ACLR@5MHz,9887,-106.0,None,-32.2,dB,-45.26,PASS
+ WCDMA,1,5.10 ACLR@10MHz,9887,-106.0,None,-42.2,dB,-52.85,PASS
+ WCDMA,1,5.13.1 EVM@Max Power,9887,-106.0,None,17.5,RMS,1.66,PASS
+ WCDMA,1,Origin Offset@Max Power,9887,-106.0,None,None,dB,-64.19,None
+ WCDMA,1,Phase Error@Max Power,9887,-106.0,None,None,deg_rms,0.76,None
+ WCDMA,1,Magnitude Error@Max Power,9887,-106.0,None,None,%_rms,1.01,None
+ WCDMA,1,IQ Imbalance@Max Power,9887,-106.0,None,None,%_I/Q,99.90,None
+ WCDMA,1,Timing Error -@Max Power,9887,-106.0,None,None,chip,0.6,None
+ WCDMA,1,5.13.2 PCDE@Max Power,9887,-106.0,None,-15,dB,-47.85,PASS
+ WCDMA,1,5.13.1 EVM@-18dBm,9887,-106.0,None,17.5,RMS,3.38,PASS
+ WCDMA,1,Origin Offset@-18dBm,9887,-106.0,None,None,dB,-56.37,None
+ WCDMA,1,Phase Error@-18dBm,9887,-106.0,None,None,deg_rms,1.22,None
+ WCDMA,1,Magnitude Error@-18dBm,9887,-106.0,None,None,%_rms,2.63,None
+ WCDMA,1,IQ Imbalance@-18dBm,9887,-106.0,None,None,%_I/Q,99.89,None
+ WCDMA,1,Timing Error -@-18dBm,9887,-106.0,None,None,chip,0.5,None
+ WCDMA,1,5.13.2 PCDE@-18dBm,9887,-106.0,None,-15,dB,-46.38,PASS
+ WCDMA,1,5.4.3 Min output Power,9887,-93.0,None,-49,dBm,-53.99,PASS
+ WCDMA,1,Origin Offset@Max Power,9613,-93.0,None,None,dB,-62.25,None
+ WCDMA,1,Phase Error@Max Power,9613,-93.0,None,None,deg_rms,0.73,None
+ WCDMA,1,Magnitude Error@Max Power,9613,-93.0,None,None,%_rms,0.68,None
+ WCDMA,1,IQ Imbalance@Max Power,9613,-93.0,None,None,%_I/Q,99.96,None
+ WCDMA,1,Timing Error -@Max Power,9613,-93.0,None,None,chip,0.6,None
+ WCDMA,1,5.4.2 ILPC;STEP-A,9613,-60.0,None,None,None,None,PASS
+ WCDMA,1,5.4.2 ILPC;STEP-B,9613,-60.0,None,None,None,None,PASS
+ WCDMA,1,5.4.2 ILPC;STEP-C,9613,-60.0,None,None,None,None,PASS
+ WCDMA,1,5.4.2 ILPC;STEP-D  Max Power,9613,-60.0,None,None,dBm,24.60,None
+ WCDMA,1,5.4.2 ILPC;STEP-E,9613,-60.0,None,None,None,None,PASS
+ WCDMA,1,5.4.2 ILPC;STEP-F,9613,-60.0,None,None,None,None,PASS
+ WCDMA,1,5.4.2 ILPC;STEP-G,9613,-60.0,None,None,None,None,PASS
+ WCDMA,1,5.4.2 ILPC;STEP-H,9613,-60.0,None,None,None,None,PASS
+ WCDMA,1,Origin Offset@Max Power,9750,-93.0,None,None,dB,-64.89,None
+ WCDMA,1,Phase Error@Max Power,9750,-93.0,None,None,deg_rms,0.68,None
+ WCDMA,1,Magnitude Error@Max Power,9750,-93.0,None,None,%_rms,0.79,None
+ WCDMA,1,IQ Imbalance@Max Power,9750,-93.0,None,None,%_I/Q,100.10,None
+ WCDMA,1,Timing Error -@Max Power,9750,-93.0,None,None,chip,0.6,None
+ WCDMA,1,5.4.2 ILPC;STEP-A,9750,-60.0,None,None,None,None,PASS
+ WCDMA,1,5.4.2 ILPC;STEP-B,9750,-60.0,None,None,None,None,PASS
+ WCDMA,1,5.4.2 ILPC;STEP-C,9750,-60.0,None,None,None,None,PASS
+ WCDMA,1,5.4.2 ILPC;STEP-D  Max Power,9750,-60.0,None,None,dBm,24.61,None
+ WCDMA,1,5.4.2 ILPC;STEP-E,9750,-60.0,None,None,None,None,PASS
+ WCDMA,1,5.4.2 ILPC;STEP-F,9750,-60.0,None,None,None,None,PASS
+ WCDMA,1,5.4.2 ILPC;STEP-G,9750,-60.0,None,None,None,None,PASS
+ WCDMA,1,5.4.2 ILPC;STEP-H,9750,-60.0,None,None,None,None,PASS
+ WCDMA,1,Origin Offset@Max Power,9887,-93.0,None,None,dB,-66.35,None
+ WCDMA,1,Phase Error@Max Power,9887,-93.0,None,None,deg_rms,0.75,None
+ WCDMA,1,Magnitude Error@Max Power,9887,-93.0,None,None,%_rms,0.93,None
+ WCDMA,1,IQ Imbalance@Max Power,9887,-93.0,None,None,%_I/Q,100.13,None
+ WCDMA,1,Timing Error -@Max Power,9887,-93.0,None,None,chip,0.6,None
+ WCDMA,1,5.4.2 ILPC;STEP-A,9887,-60.0,None,None,None,None,PASS
+ WCDMA,1,5.4.2 ILPC;STEP-B,9887,-60.0,None,None,None,None,PASS
+ WCDMA,1,5.4.2 ILPC;STEP-C,9887,-60.0,None,None,None,None,PASS
+ WCDMA,1,5.4.2 ILPC;STEP-D  Max Power,9887,-60.0,None,None,dBm,24.73,None
+ WCDMA,1,5.4.2 ILPC;STEP-E,9887,-60.0,None,None,None,None,PASS
+ WCDMA,1,5.4.2 ILPC;STEP-F,9887,-60.0,None,None,None,None,PASS
+ WCDMA,1,5.4.2 ILPC;STEP-G,9887,-60.0,None,None,None,None,PASS
+ WCDMA,1,5.4.2 ILPC;STEP-H,9887,-60.0,None,None,None,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Down4Up Step1;All Phase,9613,-65.7,None,36,deg,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Down4Up Step1;All EVM,9613,-65.7,None,17.5,%,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Down4Up Step1;All FreqEr,9613,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Down4Up Step2;All Phase,9613,-65.7,None,36,deg,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Down4Up Step2;All EVM,9613,-65.7,None,17.5,%,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Down4Up Step2;All FreqEr,9613,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Down4Up Step3;All Phase,9613,-65.7,None,36,deg,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Down4Up Step3;All EVM,9613,-65.7,None,17.5,%,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Down4Up Step3;All FreqEr,9613,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Down4Up Step4;All Phase,9613,-65.7,None,36,deg,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Down4Up Step4;All EVM,9613,-65.7,None,17.5,%,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Down4Up Step4;All FreqEr,9613,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Up4Down Step1;All Phase,9613,-65.7,None,36,deg,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Up4Down Step1;All EVM,9613,-65.7,None,17.5,%,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Up4Down Step1;All FreqEr,9613,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Up4Down Step2;All Phase,9613,-65.7,None,36,deg,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Up4Down Step2;All EVM,9613,-65.7,None,17.5,%,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Up4Down Step2;All FreqEr,9613,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Up4Down Step3;All Phase,9613,-65.7,None,36,deg,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Up4Down Step3;All EVM,9613,-65.7,None,17.5,%,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Up4Down Step3;All FreqEr,9613,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Up4Down Step4;All Phase,9613,-65.7,None,36,deg,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Up4Down Step4;All EVM,9613,-65.7,None,17.5,%,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Up4Down Step4;All FreqEr,9613,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Down4Up Step1;All Phase,9750,-65.7,None,36,deg,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Down4Up Step1;All EVM,9750,-65.7,None,17.5,%,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Down4Up Step1;All FreqEr,9750,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Down4Up Step2;All Phase,9750,-65.7,None,36,deg,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Down4Up Step2;All EVM,9750,-65.7,None,17.5,%,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Down4Up Step2;All FreqEr,9750,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Down4Up Step3;All Phase,9750,-65.7,None,36,deg,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Down4Up Step3;All EVM,9750,-65.7,None,17.5,%,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Down4Up Step3;All FreqEr,9750,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Down4Up Step4;All Phase,9750,-65.7,None,36,deg,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Down4Up Step4;All EVM,9750,-65.7,None,17.5,%,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Down4Up Step4;All FreqEr,9750,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Up4Down Step1;All Phase,9750,-65.7,None,36,deg,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Up4Down Step1;All EVM,9750,-65.7,None,17.5,%,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Up4Down Step1;All FreqEr,9750,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Up4Down Step2;All Phase,9750,-65.7,None,36,deg,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Up4Down Step2;All EVM,9750,-65.7,None,17.5,%,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Up4Down Step2;All FreqEr,9750,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Up4Down Step3;All Phase,9750,-65.7,None,36,deg,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Up4Down Step3;All EVM,9750,-65.7,None,17.5,%,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Up4Down Step3;All FreqEr,9750,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Up4Down Step4;All Phase,9750,-65.7,None,36,deg,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Up4Down Step4;All EVM,9750,-65.7,None,17.5,%,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Up4Down Step4;All FreqEr,9750,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Down4Up Step1;All Phase,9887,-65.7,None,36,deg,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Down4Up Step1;All EVM,9887,-65.7,None,17.5,%,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Down4Up Step1;All FreqEr,9887,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Down4Up Step2;All Phase,9887,-65.7,None,36,deg,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Down4Up Step2;All EVM,9887,-65.7,None,17.5,%,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Down4Up Step2;All FreqEr,9887,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Down4Up Step3;All Phase,9887,-65.7,None,36,deg,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Down4Up Step3;All EVM,9887,-65.7,None,17.5,%,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Down4Up Step3;All FreqEr,9887,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Down4Up Step4;All Phase,9887,-65.7,None,36,deg,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Down4Up Step4;All EVM,9887,-65.7,None,17.5,%,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Down4Up Step4;All FreqEr,9887,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Up4Down Step1;All Phase,9887,-65.7,None,36,deg,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Up4Down Step1;All EVM,9887,-65.7,None,17.5,%,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Up4Down Step1;All FreqEr,9887,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Up4Down Step2;All Phase,9887,-65.7,None,36,deg,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Up4Down Step2;All EVM,9887,-65.7,None,17.5,%,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Up4Down Step2;All FreqEr,9887,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Up4Down Step3;All Phase,9887,-65.7,None,36,deg,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Up4Down Step3;All EVM,9887,-65.7,None,17.5,%,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Up4Down Step3;All FreqEr,9887,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Up4Down Step4;All Phase,9887,-65.7,None,36,deg,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Up4Down Step4;All EVM,9887,-65.7,None,17.5,%,None,PASS
+ WCDMA,1,5.13.3 Phase Discont.;5Up4Down Step4;All FreqEr,9887,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,1,5.13.4 PRACH Preamble Quality;EVM,9613,-98.1,None,17.5,%_rms,2.18,PASS
+ WCDMA,1,5.13.4 PRACH Preamble Quality;PPM,9613,-98.1,-0.1,0.1,PPM,0.00,PASS
+ WCDMA,1,5.13.4 PRACH Preamble Quality;EVM,9750,-98.1,None,17.5,%_rms,2.16,PASS
+ WCDMA,1,5.13.4 PRACH Preamble Quality;PPM,9750,-98.1,-0.1,0.1,PPM,0.00,PASS
+ WCDMA,1,5.13.4 PRACH Preamble Quality;EVM,9887,-98.1,None,17.5,%_rms,2.36,PASS
+ WCDMA,1,5.13.4 PRACH Preamble Quality;PPM,9887,-98.1,-0.1,0.1,PPM,0.00,PASS
+ WCDMA,1,5.6 Change of TFC;PN9 Power,9613,-65.7,None,None,dBm,-9.36,None
+ WCDMA,1,5.6 Change of TFC;NODATA Power,9613,-65.7,None,None,dBm,-9.36,None
+!WCDMA,1,5.6 Change of TFC,9613,-65.7,4.7,9.3,dBm,0,FAIL
+ WCDMA,1,5.6 Change of TFC;PN9 Power,9750,-65.7,None,None,dBm,-9.69,None
+ WCDMA,1,5.6 Change of TFC;NODATA Power,9750,-65.7,None,None,dBm,-9.69,None
+!WCDMA,1,5.6 Change of TFC,9750,-65.7,4.7,9.3,dBm,0,FAIL
+ WCDMA,1,5.6 Change of TFC;PN9 Power,9887,-65.7,None,None,dBm,-9.14,None
+ WCDMA,1,5.6 Change of TFC;NODATA Power,9887,-65.7,None,None,dBm,-9.24,None
+!WCDMA,1,5.6 Change of TFC,9887,-65.7,4.7,9.3,dBm,0.0999999999999996,FAIL
+ WCDMA,2,5.2 Max Output Power,9263,-106.0,20.3,25.7,dBm,24.38,PASS
+ WCDMA,2,5.3 Frequency Error,9263,-106.0,-0.1,0.1,PPM,0.00,PASS
+ WCDMA,2,5.8 Occupied Bandwidth,9263,-106.0,None,5,MHz,4.18,PASS
+ WCDMA,2,5.9 Spectrum emission mask,9263,-106.0,None,None,None,None,PASS
+ WCDMA,2,5.9 SEM Margin Value L1,9263,-106.0,0,None,dB,12.86,PASS
+ WCDMA,2,5.9 SEM Margin Value L2,9263,-106.0,0,None,dB,13.06,PASS
+ WCDMA,2,5.9 SEM Margin Value L3,9263,-106.0,0,None,dB,15.91,PASS
+ WCDMA,2,5.9 SEM Margin Value L4,9263,-106.0,0,None,dB,15.88,PASS
+ WCDMA,2,5.9 SEM Margin Value U1,9263,-106.0,0,None,dB,10.74,PASS
+ WCDMA,2,5.9 SEM Margin Value U2,9263,-106.0,0,None,dB,11.37,PASS
+ WCDMA,2,5.9 SEM Margin Value U3,9263,-106.0,0,None,dB,8.74,PASS
+ WCDMA,2,5.9 SEM Margin Value U4,9263,-106.0,0,None,dB,7.90,PASS
+ WCDMA,2,5.10 ACLR@-10MHz,9263,-106.0,None,-42.2,dB,-61.24,PASS
+ WCDMA,2,5.10 ACLR@-5MHz,9263,-106.0,None,-32.2,dB,-43.43,PASS
+ WCDMA,2,5.10 ACLR@5MHz,9263,-106.0,None,-32.2,dB,-42.05,PASS
+ WCDMA,2,5.10 ACLR@10MHz,9263,-106.0,None,-42.2,dB,-51.25,PASS
+ WCDMA,2,5.13.1 EVM@Max Power,9263,-106.0,None,17.5,RMS,1.51,PASS
+ WCDMA,2,Origin Offset@Max Power,9263,-106.0,None,None,dB,-71.83,None
+ WCDMA,2,Phase Error@Max Power,9263,-106.0,None,None,deg_rms,0.74,None
+ WCDMA,2,Magnitude Error@Max Power,9263,-106.0,None,None,%_rms,0.78,None
+ WCDMA,2,IQ Imbalance@Max Power,9263,-106.0,None,None,%_I/Q,99.95,None
+ WCDMA,2,Timing Error -@Max Power,9263,-106.0,None,None,chip,0.3,None
+ WCDMA,2,5.13.2 PCDE@Max Power,9263,-106.0,None,-15,dB,-48.86,PASS
+ WCDMA,2,5.13.1 EVM@-18dBm,9263,-106.0,None,17.5,RMS,1.91,PASS
+ WCDMA,2,Origin Offset@-18dBm,9263,-106.0,None,None,dB,-70.32,None
+ WCDMA,2,Phase Error@-18dBm,9263,-106.0,None,None,deg_rms,0.78,None
+ WCDMA,2,Magnitude Error@-18dBm,9263,-106.0,None,None,%_rms,1.34,None
+ WCDMA,2,IQ Imbalance@-18dBm,9263,-106.0,None,None,%_I/Q,99.97,None
+ WCDMA,2,Timing Error -@-18dBm,9263,-106.0,None,None,chip,0.3,None
+ WCDMA,2,5.13.2 PCDE@-18dBm,9263,-106.0,None,-15,dB,-49.01,PASS
+ WCDMA,2,5.4.3 Min output Power,9263,-93.0,None,-49,dBm,-53.51,PASS
+ WCDMA,2,5.2 Max Output Power,9400,-106.0,20.3,25.7,dBm,24.41,PASS
+ WCDMA,2,5.3 Frequency Error,9400,-106.0,-0.1,0.1,PPM,0.00,PASS
+ WCDMA,2,5.8 Occupied Bandwidth,9400,-106.0,None,5,MHz,4.16,PASS
+ WCDMA,2,5.9 Spectrum emission mask,9400,-106.0,None,None,None,None,PASS
+ WCDMA,2,5.9 SEM Margin Value L1,9400,-106.0,0,None,dB,15.91,PASS
+ WCDMA,2,5.9 SEM Margin Value L2,9400,-106.0,0,None,dB,15.42,PASS
+ WCDMA,2,5.9 SEM Margin Value L3,9400,-106.0,0,None,dB,14.49,PASS
+ WCDMA,2,5.9 SEM Margin Value L4,9400,-106.0,0,None,dB,14.45,PASS
+ WCDMA,2,5.9 SEM Margin Value U1,9400,-106.0,0,None,dB,15.47,PASS
+ WCDMA,2,5.9 SEM Margin Value U2,9400,-106.0,0,None,dB,15.48,PASS
+ WCDMA,2,5.9 SEM Margin Value U3,9400,-106.0,0,None,dB,9.83,PASS
+ WCDMA,2,5.9 SEM Margin Value U4,9400,-106.0,0,None,dB,9.42,PASS
+ WCDMA,2,5.10 ACLR@-10MHz,9400,-106.0,None,-42.2,dB,-59.22,PASS
+ WCDMA,2,5.10 ACLR@-5MHz,9400,-106.0,None,-32.2,dB,-45.52,PASS
+ WCDMA,2,5.10 ACLR@5MHz,9400,-106.0,None,-32.2,dB,-45.69,PASS
+ WCDMA,2,5.10 ACLR@10MHz,9400,-106.0,None,-42.2,dB,-53.00,PASS
+ WCDMA,2,5.13.1 EVM@Max Power,9400,-106.0,None,17.5,RMS,1.98,PASS
+ WCDMA,2,Origin Offset@Max Power,9400,-106.0,None,None,dB,-71.79,None
+ WCDMA,2,Phase Error@Max Power,9400,-106.0,None,None,deg_rms,0.77,None
+ WCDMA,2,Magnitude Error@Max Power,9400,-106.0,None,None,%_rms,1.45,None
+ WCDMA,2,IQ Imbalance@Max Power,9400,-106.0,None,None,%_I/Q,100.02,None
+ WCDMA,2,Timing Error -@Max Power,9400,-106.0,None,None,chip,0.3,None
+ WCDMA,2,5.13.2 PCDE@Max Power,9400,-106.0,None,-15,dB,-48.40,PASS
+ WCDMA,2,5.13.1 EVM@-18dBm,9400,-106.0,None,17.5,RMS,3.07,PASS
+ WCDMA,2,Origin Offset@-18dBm,9400,-106.0,None,None,dB,-65.77,None
+ WCDMA,2,Phase Error@-18dBm,9400,-106.0,None,None,deg_rms,1.10,None
+ WCDMA,2,Magnitude Error@-18dBm,9400,-106.0,None,None,%_rms,2.39,None
+ WCDMA,2,IQ Imbalance@-18dBm,9400,-106.0,None,None,%_I/Q,100.02,None
+ WCDMA,2,Timing Error -@-18dBm,9400,-106.0,None,None,chip,0.2,None
+ WCDMA,2,5.13.2 PCDE@-18dBm,9400,-106.0,None,-15,dB,-47.28,PASS
+ WCDMA,2,5.4.3 Min output Power,9400,-93.0,None,-49,dBm,-53.52,PASS
+ WCDMA,2,5.2 Max Output Power,9537,-106.0,20.3,25.7,dBm,24.31,PASS
+ WCDMA,2,5.3 Frequency Error,9537,-106.0,-0.1,0.1,PPM,0.00,PASS
+ WCDMA,2,5.8 Occupied Bandwidth,9537,-106.0,None,5,MHz,4.16,PASS
+ WCDMA,2,5.9 Spectrum emission mask,9537,-106.0,None,None,None,None,PASS
+ WCDMA,2,5.9 SEM Margin Value L1,9537,-106.0,0,None,dB,15.22,PASS
+ WCDMA,2,5.9 SEM Margin Value L2,9537,-106.0,0,None,dB,14.79,PASS
+ WCDMA,2,5.9 SEM Margin Value L3,9537,-106.0,0,None,dB,13.91,PASS
+ WCDMA,2,5.9 SEM Margin Value L4,9537,-106.0,0,None,dB,13.86,PASS
+ WCDMA,2,5.9 SEM Margin Value U1,9537,-106.0,0,None,dB,10.47,PASS
+ WCDMA,2,5.9 SEM Margin Value U2,9537,-106.0,0,None,dB,10.31,PASS
+ WCDMA,2,5.9 SEM Margin Value U3,9537,-106.0,0,None,dB,10.90,PASS
+ WCDMA,2,5.9 SEM Margin Value U4,9537,-106.0,0,None,dB,10.51,PASS
+ WCDMA,2,5.10 ACLR@-10MHz,9537,-106.0,None,-42.2,dB,-58.36,PASS
+ WCDMA,2,5.10 ACLR@-5MHz,9537,-106.0,None,-32.2,dB,-45.03,PASS
+ WCDMA,2,5.10 ACLR@5MHz,9537,-106.0,None,-32.2,dB,-41.09,PASS
+ WCDMA,2,5.10 ACLR@10MHz,9537,-106.0,None,-42.2,dB,-54.06,PASS
+ WCDMA,2,5.13.1 EVM@Max Power,9537,-106.0,None,17.5,RMS,2.00,PASS
+ WCDMA,2,Origin Offset@Max Power,9537,-106.0,None,None,dB,-66.96,None
+ WCDMA,2,Phase Error@Max Power,9537,-106.0,None,None,deg_rms,0.80,None
+ WCDMA,2,Magnitude Error@Max Power,9537,-106.0,None,None,%_rms,1.44,None
+ WCDMA,2,IQ Imbalance@Max Power,9537,-106.0,None,None,%_I/Q,100.00,None
+ WCDMA,2,Timing Error -@Max Power,9537,-106.0,None,None,chip,0.2,None
+ WCDMA,2,5.13.2 PCDE@Max Power,9537,-106.0,None,-15,dB,-48.22,PASS
+ WCDMA,2,5.13.1 EVM@-18dBm,9537,-106.0,None,17.5,RMS,2.26,PASS
+ WCDMA,2,Origin Offset@-18dBm,9537,-106.0,None,None,dB,-63.83,None
+ WCDMA,2,Phase Error@-18dBm,9537,-106.0,None,None,deg_rms,0.87,None
+ WCDMA,2,Magnitude Error@-18dBm,9537,-106.0,None,None,%_rms,1.67,None
+ WCDMA,2,IQ Imbalance@-18dBm,9537,-106.0,None,None,%_I/Q,100.02,None
+ WCDMA,2,Timing Error -@-18dBm,9537,-106.0,None,None,chip,0.3,None
+ WCDMA,2,5.13.2 PCDE@-18dBm,9537,-106.0,None,-15,dB,-48.67,PASS
+ WCDMA,2,5.4.3 Min output Power,9537,-93.0,None,-49,dBm,-52.97,PASS
+ WCDMA,2,Origin Offset@Max Power,9263,-93.0,None,None,dB,-62.77,None
+ WCDMA,2,Phase Error@Max Power,9263,-93.0,None,None,deg_rms,0.75,None
+ WCDMA,2,Magnitude Error@Max Power,9263,-93.0,None,None,%_rms,0.72,None
+ WCDMA,2,IQ Imbalance@Max Power,9263,-93.0,None,None,%_I/Q,100.07,None
+ WCDMA,2,Timing Error -@Max Power,9263,-93.0,None,None,chip,0.5,None
+ WCDMA,2,5.4.2 ILPC;STEP-A,9263,-60.0,None,None,None,None,PASS
+ WCDMA,2,5.4.2 ILPC;STEP-B,9263,-60.0,None,None,None,None,PASS
+ WCDMA,2,5.4.2 ILPC;STEP-C,9263,-60.0,None,None,None,None,PASS
+ WCDMA,2,5.4.2 ILPC;STEP-D  Max Power,9263,-60.0,None,None,dBm,24.39,None
+ WCDMA,2,5.4.2 ILPC;STEP-E,9263,-60.0,None,None,None,None,PASS
+ WCDMA,2,5.4.2 ILPC;STEP-F,9263,-60.0,None,None,None,None,PASS
+ WCDMA,2,5.4.2 ILPC;STEP-G,9263,-60.0,None,None,None,None,PASS
+ WCDMA,2,5.4.2 ILPC;STEP-H,9263,-60.0,None,None,None,None,PASS
+ WCDMA,2,Origin Offset@Max Power,9400,-93.0,None,None,dB,-61.83,None
+ WCDMA,2,Phase Error@Max Power,9400,-93.0,None,None,deg_rms,0.77,None
+ WCDMA,2,Magnitude Error@Max Power,9400,-93.0,None,None,%_rms,1.46,None
+ WCDMA,2,IQ Imbalance@Max Power,9400,-93.0,None,None,%_I/Q,100.07,None
+ WCDMA,2,Timing Error -@Max Power,9400,-93.0,None,None,chip,0.4,None
+ WCDMA,2,5.4.2 ILPC;STEP-A,9400,-60.0,None,None,None,None,PASS
+ WCDMA,2,5.4.2 ILPC;STEP-B,9400,-60.0,None,None,None,None,PASS
+ WCDMA,2,5.4.2 ILPC;STEP-C,9400,-60.0,None,None,None,None,PASS
+ WCDMA,2,5.4.2 ILPC;STEP-D  Max Power,9400,-60.0,None,None,dBm,24.37,None
+ WCDMA,2,5.4.2 ILPC;STEP-E,9400,-60.0,None,None,None,None,PASS
+ WCDMA,2,5.4.2 ILPC;STEP-F,9400,-60.0,None,None,None,None,PASS
+ WCDMA,2,5.4.2 ILPC;STEP-G,9400,-60.0,None,None,None,None,PASS
+ WCDMA,2,5.4.2 ILPC;STEP-H,9400,-60.0,None,None,None,None,PASS
+ WCDMA,2,Origin Offset@Max Power,9537,-93.0,None,None,dB,-62.60,None
+ WCDMA,2,Phase Error@Max Power,9537,-93.0,None,None,deg_rms,0.78,None
+ WCDMA,2,Magnitude Error@Max Power,9537,-93.0,None,None,%_rms,1.49,None
+ WCDMA,2,IQ Imbalance@Max Power,9537,-93.0,None,None,%_I/Q,100.05,None
+ WCDMA,2,Timing Error -@Max Power,9537,-93.0,None,None,chip,0.3,None
+ WCDMA,2,5.4.2 ILPC;STEP-A,9537,-60.0,None,None,None,None,PASS
+ WCDMA,2,5.4.2 ILPC;STEP-B,9537,-60.0,None,None,None,None,PASS
+ WCDMA,2,5.4.2 ILPC;STEP-C,9537,-60.0,None,None,None,None,PASS
+ WCDMA,2,5.4.2 ILPC;STEP-D  Max Power,9537,-60.0,None,None,dBm,24.33,None
+ WCDMA,2,5.4.2 ILPC;STEP-E,9537,-60.0,None,None,None,None,PASS
+ WCDMA,2,5.4.2 ILPC;STEP-F,9537,-60.0,None,None,None,None,PASS
+ WCDMA,2,5.4.2 ILPC;STEP-G,9537,-60.0,None,None,None,None,PASS
+ WCDMA,2,5.4.2 ILPC;STEP-H,9537,-60.0,None,None,None,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Down4Up Step1;All Phase,9263,-65.7,None,36,deg,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Down4Up Step1;All EVM,9263,-65.7,None,17.5,%,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Down4Up Step1;All FreqEr,9263,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Down4Up Step2;All Phase,9263,-65.7,None,36,deg,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Down4Up Step2;All EVM,9263,-65.7,None,17.5,%,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Down4Up Step2;All FreqEr,9263,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Down4Up Step3;All Phase,9263,-65.7,None,36,deg,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Down4Up Step3;All EVM,9263,-65.7,None,17.5,%,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Down4Up Step3;All FreqEr,9263,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Down4Up Step4;All Phase,9263,-65.7,None,36,deg,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Down4Up Step4;All EVM,9263,-65.7,None,17.5,%,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Down4Up Step4;All FreqEr,9263,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Up4Down Step1;All Phase,9263,-65.7,None,36,deg,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Up4Down Step1;All EVM,9263,-65.7,None,17.5,%,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Up4Down Step1;All FreqEr,9263,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Up4Down Step2;All Phase,9263,-65.7,None,36,deg,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Up4Down Step2;All EVM,9263,-65.7,None,17.5,%,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Up4Down Step2;All FreqEr,9263,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Up4Down Step3;All Phase,9263,-65.7,None,36,deg,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Up4Down Step3;All EVM,9263,-65.7,None,17.5,%,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Up4Down Step3;All FreqEr,9263,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Up4Down Step4;All Phase,9263,-65.7,None,36,deg,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Up4Down Step4;All EVM,9263,-65.7,None,17.5,%,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Up4Down Step4;All FreqEr,9263,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Down4Up Step1;All Phase,9400,-65.7,None,36,deg,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Down4Up Step1;All EVM,9400,-65.7,None,17.5,%,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Down4Up Step1;All FreqEr,9400,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Down4Up Step2;All Phase,9400,-65.7,None,36,deg,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Down4Up Step2;All EVM,9400,-65.7,None,17.5,%,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Down4Up Step2;All FreqEr,9400,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Down4Up Step3;All Phase,9400,-65.7,None,36,deg,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Down4Up Step3;All EVM,9400,-65.7,None,17.5,%,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Down4Up Step3;All FreqEr,9400,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Down4Up Step4;All Phase,9400,-65.7,None,36,deg,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Down4Up Step4;All EVM,9400,-65.7,None,17.5,%,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Down4Up Step4;All FreqEr,9400,-65.7,None,0.1,PPM,None,PASS
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 0,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 1,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 2,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 3,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 4,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 5,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 6,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 7,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 8,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 9,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 10,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 11,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 12,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 13,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 14,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 15,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 16,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 17,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 18,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 19,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 20,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 21,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 22,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 23,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 24,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 25,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 26,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 27,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 28,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 29,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 30,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 31,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 32,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 33,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 34,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 35,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 36,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 37,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 38,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 39,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 40,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 41,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 42,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 43,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 44,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 45,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 46,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 47,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 48,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 49,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 50,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 51,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 52,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 53,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 54,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 55,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 56,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 57,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 58,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 59,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 60,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 61,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 62,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 63,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 64,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 65,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 66,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 67,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 68,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 69,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 70,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 71,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 72,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 73,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 74,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 75,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 76,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 77,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 78,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 79,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 80,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 81,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 82,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 83,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 84,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 85,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 86,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 87,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 88,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 89,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 90,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 91,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 92,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 93,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 94,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 95,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 96,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 97,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 98,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 99,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 100,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 101,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 102,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 103,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 104,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 105,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 106,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 107,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 108,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 109,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 110,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 111,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 112,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 113,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 114,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 115,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 116,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 117,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 118,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 119,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 120,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 121,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 122,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 123,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 124,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 125,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 126,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 127,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 128,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 129,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 130,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 131,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 132,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 133,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 134,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 135,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 136,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 137,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 138,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 139,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 140,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 141,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 142,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 143,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 144,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 145,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 146,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 147,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 148,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 149,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 150,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 151,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 152,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 153,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 154,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 155,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 156,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 157,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 158,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 159,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 160,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 161,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 162,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 163,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 164,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 165,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 166,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 167,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 168,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 169,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 170,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 171,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 172,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 173,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 174,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 175,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 176,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 177,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 178,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;Phase Slot 179,9400,-65.7,None,66,deg,999999.00,FAIL
+!WCDMA,2,5.13.3 Phase Discont.;5Up4Down Step1;All Phase,9400,-65.7,None,36,deg,None,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 0,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 1,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 2,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 3,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 4,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 5,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 6,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 7,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 8,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 9,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 10,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 11,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 12,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 13,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 14,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 15,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 16,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 17,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 18,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 19,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 20,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 21,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 22,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 23,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 24,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 25,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 26,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 27,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 28,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 29,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 30,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 31,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 32,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 33,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 34,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 35,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 36,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 37,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 38,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 39,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 40,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 41,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 42,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 43,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 44,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 45,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 46,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 47,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 48,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 49,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 50,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 51,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 52,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 53,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 54,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 55,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 56,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 57,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 58,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 59,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 60,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 61,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 62,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 63,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 64,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 65,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 66,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 67,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 68,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 69,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 70,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 71,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 72,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 73,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 74,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 75,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 76,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 77,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 78,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 79,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 80,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 81,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 82,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 83,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 84,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 85,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 86,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 87,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 88,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 89,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 90,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 91,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 92,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 93,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 94,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 95,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 96,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 97,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 98,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 99,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 100,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 101,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 102,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 103,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 104,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 105,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 106,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 107,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 108,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 109,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 110,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 111,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 112,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 113,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 114,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 115,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 116,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 117,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 118,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 119,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 120,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 121,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 122,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 123,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 124,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 125,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 126,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 127,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 128,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 129,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 130,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 131,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 132,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 133,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 134,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 135,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 136,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 137,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 138,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 139,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 140,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 141,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 142,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 143,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 144,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 145,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 146,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 147,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 148,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 149,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 150,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 151,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 152,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 153,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 154,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 155,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 156,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 157,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 158,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 159,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 160,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 161,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 162,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 163,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 164,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 165,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 166,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 167,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 168,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 169,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 170,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 171,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 172,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 173,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 174,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 175,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 176,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 177,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 178,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;EVM Slot 179,9400,-65.7,None,17.5,%,999999.00,FAIL
+!WCDMA,2,5.13.3 Phase Discont.;5Up4Down Step1;All EVM,9400,-65.7,None,17.5,%,None,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 0,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 1,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 2,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 3,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 4,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 5,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 6,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 7,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 8,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 9,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 10,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 11,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 12,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 13,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 14,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 15,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 16,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 17,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 18,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 19,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 20,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 21,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 22,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 23,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 24,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 25,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 26,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 27,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 28,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 29,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 30,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 31,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 32,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 33,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 34,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 35,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 36,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 37,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 38,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 39,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 40,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 41,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 42,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 43,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 44,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 45,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 46,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 47,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 48,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 49,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 50,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 51,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 52,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 53,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 54,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 55,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 56,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 57,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 58,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 59,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 60,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 61,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 62,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 63,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 64,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 65,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 66,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 67,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 68,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 69,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 70,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 71,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 72,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 73,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 74,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 75,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 76,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 77,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 78,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 79,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 80,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 81,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 82,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 83,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 84,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 85,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 86,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 87,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 88,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 89,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 90,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 91,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 92,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 93,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 94,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 95,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 96,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 97,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 98,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 99,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 100,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 101,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 102,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 103,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 104,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 105,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 106,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 107,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 108,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 109,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 110,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 111,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 112,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 113,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 114,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 115,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 116,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 117,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 118,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 119,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 120,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 121,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 122,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 123,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 124,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 125,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 126,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 127,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 128,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 129,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 130,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 131,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 132,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 133,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 134,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 135,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 136,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 137,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 138,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 139,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 140,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 141,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 142,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 143,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 144,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 145,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 146,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 147,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 148,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 149,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 150,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 151,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 152,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 153,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 154,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 155,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 156,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 157,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 158,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 159,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 160,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 161,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 162,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 163,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 164,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 165,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 166,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 167,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 168,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 169,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 170,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 171,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 172,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 173,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 174,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 175,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 176,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 177,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 178,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,Phase Discont.;5Up4Down Step1;FeqEr Slot 179,9400,-65.7,-0.1,0.1,ppm,999999.00,FAIL
+!WCDMA,2,5.13.3 Phase Discont.;5Up4Down Step1;All FreqEr,9400,-65.7,None,0.1,PPM,None,FAIL
+ WCDMA,2,5.13.3 Phase Discont.;5Up4Down Step2;All Phase,9400,-65.7,None,36,deg,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Up4Down Step2;All EVM,9400,-65.7,None,17.5,%,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Up4Down Step2;All FreqEr,9400,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Up4Down Step3;All Phase,9400,-65.7,None,36,deg,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Up4Down Step3;All EVM,9400,-65.7,None,17.5,%,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Up4Down Step3;All FreqEr,9400,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Up4Down Step4;All Phase,9400,-65.7,None,36,deg,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Up4Down Step4;All EVM,9400,-65.7,None,17.5,%,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Up4Down Step4;All FreqEr,9400,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Down4Up Step1;All Phase,9537,-65.7,None,36,deg,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Down4Up Step1;All EVM,9537,-65.7,None,17.5,%,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Down4Up Step1;All FreqEr,9537,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Down4Up Step2;All Phase,9537,-65.7,None,36,deg,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Down4Up Step2;All EVM,9537,-65.7,None,17.5,%,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Down4Up Step2;All FreqEr,9537,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Down4Up Step3;All Phase,9537,-65.7,None,36,deg,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Down4Up Step3;All EVM,9537,-65.7,None,17.5,%,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Down4Up Step3;All FreqEr,9537,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Down4Up Step4;All Phase,9537,-65.7,None,36,deg,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Down4Up Step4;All EVM,9537,-65.7,None,17.5,%,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Down4Up Step4;All FreqEr,9537,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Up4Down Step1;All Phase,9537,-65.7,None,36,deg,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Up4Down Step1;All EVM,9537,-65.7,None,17.5,%,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Up4Down Step1;All FreqEr,9537,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Up4Down Step2;All Phase,9537,-65.7,None,36,deg,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Up4Down Step2;All EVM,9537,-65.7,None,17.5,%,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Up4Down Step2;All FreqEr,9537,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Up4Down Step3;All Phase,9537,-65.7,None,36,deg,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Up4Down Step3;All EVM,9537,-65.7,None,17.5,%,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Up4Down Step3;All FreqEr,9537,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Up4Down Step4;All Phase,9537,-65.7,None,36,deg,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Up4Down Step4;All EVM,9537,-65.7,None,17.5,%,None,PASS
+ WCDMA,2,5.13.3 Phase Discont.;5Up4Down Step4;All FreqEr,9537,-65.7,None,0.1,PPM,None,PASS
+ WCDMA,2,5.13.4 PRACH Preamble Quality;EVM,9263,-98.1,None,17.5,%_rms,1.57,PASS
+ WCDMA,2,5.13.4 PRACH Preamble Quality;PPM,9263,-98.1,-0.1,0.1,PPM,0.00,PASS
+ WCDMA,2,5.13.4 PRACH Preamble Quality;EVM,9400,-98.1,None,17.5,%_rms,2.07,PASS
+ WCDMA,2,5.13.4 PRACH Preamble Quality;PPM,9400,-98.1,-0.1,0.1,PPM,0.00,PASS
+ WCDMA,2,5.13.4 PRACH Preamble Quality;EVM,9537,-98.1,None,17.5,%_rms,2.03,PASS
+ WCDMA,2,5.13.4 PRACH Preamble Quality;PPM,9537,-98.1,-0.1,0.1,PPM,0.00,PASS
+ WCDMA,2,5.6 Change of TFC;PN9 Power,9263,-65.7,None,None,dBm,-8.75,None
+ WCDMA,2,5.6 Change of TFC;NODATA Power,9263,-65.7,None,None,dBm,-8.76,None
+!WCDMA,2,5.6 Change of TFC,9263,-65.7,4.7,9.3,dBm,0.00999999999999979,FAIL
+ WCDMA,2,5.6 Change of TFC;PN9 Power,9400,-65.7,None,None,dBm,-8.79,None
+ WCDMA,2,5.6 Change of TFC;NODATA Power,9400,-65.7,None,None,dBm,-8.79,None
+!WCDMA,2,5.6 Change of TFC,9400,-65.7,4.7,9.3,dBm,0,FAIL
+ WCDMA,2,5.6 Change of TFC;PN9 Power,9537,-65.7,None,None,dBm,-9.59,None
+ WCDMA,2,5.6 Change of TFC;NODATA Power,9537,-65.7,None,None,dBm,-9.74,None
+!WCDMA,2,5.6 Change of TFC,9537,-65.7,4.7,9.3,dBm,0.15,FAIL
+ WCDMA,4,5.2 Max Output Power,1313,-106.0,20.3,25.7,dBm,24.33,PASS
+ WCDMA,4,5.3 Frequency Error,1313,-106.0,-0.1,0.1,PPM,0.00,PASS
+ WCDMA,4,5.8 Occupied Bandwidth,1313,-106.0,None,5,MHz,4.16,PASS
+ WCDMA,4,5.9 Spectrum emission mask,1313,-106.0,None,None,None,None,PASS
+ WCDMA,4,5.9 SEM Margin Value L1,1313,-106.0,0,None,dB,12.13,PASS
+ WCDMA,4,5.9 SEM Margin Value L2,1313,-106.0,0,None,dB,12.18,PASS
+ WCDMA,4,5.9 SEM Margin Value L3,1313,-106.0,0,None,dB,13.64,PASS
+ WCDMA,4,5.9 SEM Margin Value L4,1313,-106.0,0,None,dB,13.61,PASS
+ WCDMA,4,5.9 SEM Margin Value U1,1313,-106.0,0,None,dB,11.32,PASS
+ WCDMA,4,5.9 SEM Margin Value U2,1313,-106.0,0,None,dB,12.24,PASS
+ WCDMA,4,5.9 SEM Margin Value U3,1313,-106.0,0,None,dB,11.44,PASS
+ WCDMA,4,5.9 SEM Margin Value U4,1313,-106.0,0,None,dB,10.82,PASS
+ WCDMA,4,5.10 ACLR@-10MHz,1313,-106.0,None,-42.2,dB,-58.22,PASS
+ WCDMA,4,5.10 ACLR@-5MHz,1313,-106.0,None,-32.2,dB,-42.66,PASS
+ WCDMA,4,5.10 ACLR@5MHz,1313,-106.0,None,-32.2,dB,-42.99,PASS
+ WCDMA,4,5.10 ACLR@10MHz,1313,-106.0,None,-42.2,dB,-54.20,PASS
+ WCDMA,4,5.13.1 EVM@Max Power,1313,-106.0,None,17.5,RMS,1.52,PASS
+ WCDMA,4,Origin Offset@Max Power,1313,-106.0,None,None,dB,-69.25,None
+ WCDMA,4,Phase Error@Max Power,1313,-106.0,None,None,deg_rms,0.77,None
+ WCDMA,4,Magnitude Error@Max Power,1313,-106.0,None,None,%_rms,0.71,None
+ WCDMA,4,IQ Imbalance@Max Power,1313,-106.0,None,None,%_I/Q,99.97,None
+ WCDMA,4,Timing Error -@Max Power,1313,-106.0,None,None,chip,0.2,None
+ WCDMA,4,5.13.2 PCDE@Max Power,1313,-106.0,None,-15,dB,-49.75,PASS
+ WCDMA,4,5.13.1 EVM@-18dBm,1313,-106.0,None,17.5,RMS,4.07,PASS
+ WCDMA,4,Origin Offset@-18dBm,1313,-106.0,None,None,dB,-60.86,None
+ WCDMA,4,Phase Error@-18dBm,1313,-106.0,None,None,deg_rms,1.70,None
+ WCDMA,4,Magnitude Error@-18dBm,1313,-106.0,None,None,%_rms,2.75,None
+ WCDMA,4,IQ Imbalance@-18dBm,1313,-106.0,None,None,%_I/Q,100.12,None
+ WCDMA,4,Timing Error -@-18dBm,1313,-106.0,None,None,chip,0.2,None
+ WCDMA,4,5.13.2 PCDE@-18dBm,1313,-106.0,None,-15,dB,-42.60,PASS
+ WCDMA,4,5.4.3 Min output Power,1313,-93.0,None,-49,dBm,-52.84,PASS
+ WCDMA,4,5.2 Max Output Power,1450,-106.0,20.3,25.7,dBm,24.50,PASS
+ WCDMA,4,5.3 Frequency Error,1450,-106.0,-0.1,0.1,PPM,0.00,PASS
+ WCDMA,4,5.8 Occupied Bandwidth,1450,-106.0,None,5,MHz,4.17,PASS
+ WCDMA,4,5.9 Spectrum emission mask,1450,-106.0,None,None,None,None,PASS
+ WCDMA,4,5.9 SEM Margin Value L1,1450,-106.0,0,None,dB,15.14,PASS
+ WCDMA,4,5.9 SEM Margin Value L2,1450,-106.0,0,None,dB,15.59,PASS
+ WCDMA,4,5.9 SEM Margin Value L3,1450,-106.0,0,None,dB,12.40,PASS
+ WCDMA,4,5.9 SEM Margin Value L4,1450,-106.0,0,None,dB,12.37,PASS
+ WCDMA,4,5.9 SEM Margin Value U1,1450,-106.0,0,None,dB,14.25,PASS
+ WCDMA,4,5.9 SEM Margin Value U2,1450,-106.0,0,None,dB,15.32,PASS
+ WCDMA,4,5.9 SEM Margin Value U3,1450,-106.0,0,None,dB,11.28,PASS
+ WCDMA,4,5.9 SEM Margin Value U4,1450,-106.0,0,None,dB,11.06,PASS
+ WCDMA,4,5.10 ACLR@-10MHz,1450,-106.0,None,-42.2,dB,-56.99,PASS
+ WCDMA,4,5.10 ACLR@-5MHz,1450,-106.0,None,-32.2,dB,-45.34,PASS
+ WCDMA,4,5.10 ACLR@5MHz,1450,-106.0,None,-32.2,dB,-45.89,PASS
+ WCDMA,4,5.10 ACLR@10MHz,1450,-106.0,None,-42.2,dB,-54.57,PASS
+ WCDMA,4,5.13.1 EVM@Max Power,1450,-106.0,None,17.5,RMS,1.59,PASS
+ WCDMA,4,Origin Offset@Max Power,1450,-106.0,None,None,dB,-70.71,None
+ WCDMA,4,Phase Error@Max Power,1450,-106.0,None,None,deg_rms,0.71,None
+ WCDMA,4,Magnitude Error@Max Power,1450,-106.0,None,None,%_rms,0.98,None
+ WCDMA,4,IQ Imbalance@Max Power,1450,-106.0,None,None,%_I/Q,99.97,None
+ WCDMA,4,Timing Error -@Max Power,1450,-106.0,None,None,chip,0.2,None
+ WCDMA,4,5.13.2 PCDE@Max Power,1450,-106.0,None,-15,dB,-49.42,PASS
+ WCDMA,4,5.13.1 EVM@-18dBm,1450,-106.0,None,17.5,RMS,3.37,PASS
+ WCDMA,4,Origin Offset@-18dBm,1450,-106.0,None,None,dB,-57.31,None
+ WCDMA,4,Phase Error@-18dBm,1450,-106.0,None,None,deg_rms,1.20,None
+ WCDMA,4,Magnitude Error@-18dBm,1450,-106.0,None,None,%_rms,2.64,None
+ WCDMA,4,IQ Imbalance@-18dBm,1450,-106.0,None,None,%_I/Q,100.05,None
+ WCDMA,4,Timing Error -@-18dBm,1450,-106.0,None,None,chip,0.1,None
+ WCDMA,4,5.13.2 PCDE@-18dBm,1450,-106.0,None,-15,dB,-46.59,PASS
+ WCDMA,4,5.4.3 Min output Power,1450,-93.0,None,-49,dBm,-52.87,PASS
+ WCDMA,4,5.2 Max Output Power,1512,-106.0,20.3,25.7,dBm,24.63,PASS
+ WCDMA,4,5.3 Frequency Error,1512,-106.0,-0.1,0.1,PPM,0.00,PASS
+ WCDMA,4,5.8 Occupied Bandwidth,1512,-106.0,None,5,MHz,4.18,PASS
+ WCDMA,4,5.9 Spectrum emission mask,1512,-106.0,None,None,None,None,PASS
+ WCDMA,4,5.9 SEM Margin Value L1,1512,-106.0,0,None,dB,11.35,PASS
+ WCDMA,4,5.9 SEM Margin Value L2,1512,-106.0,0,None,dB,11.90,PASS
+ WCDMA,4,5.9 SEM Margin Value L3,1512,-106.0,0,None,dB,13.16,PASS
+ WCDMA,4,5.9 SEM Margin Value L4,1512,-106.0,0,None,dB,13.13,PASS
+ WCDMA,4,5.9 SEM Margin Value U1,1512,-106.0,0,None,dB,11.50,PASS
+ WCDMA,4,5.9 SEM Margin Value U2,1512,-106.0,0,None,dB,11.63,PASS
+ WCDMA,4,5.9 SEM Margin Value U3,1512,-106.0,0,None,dB,11.95,PASS
+ WCDMA,4,5.9 SEM Margin Value U4,1512,-106.0,0,None,dB,11.91,PASS
+ WCDMA,4,5.10 ACLR@-10MHz,1512,-106.0,None,-42.2,dB,-57.43,PASS
+ WCDMA,4,5.10 ACLR@-5MHz,1512,-106.0,None,-32.2,dB,-42.33,PASS
+ WCDMA,4,5.10 ACLR@5MHz,1512,-106.0,None,-32.2,dB,-42.25,PASS
+ WCDMA,4,5.10 ACLR@10MHz,1512,-106.0,None,-42.2,dB,-55.48,PASS
+ WCDMA,4,5.13.1 EVM@Max Power,1512,-106.0,None,17.5,RMS,1.80,PASS
+ WCDMA,4,Origin Offset@Max Power,1512,-106.0,None,None,dB,-68.17,None
+ WCDMA,4,Phase Error@Max Power,1512,-106.0,None,None,deg_rms,0.79,None
+ WCDMA,4,Magnitude Error@Max Power,1512,-106.0,None,None,%_rms,1.15,None
+ WCDMA,4,IQ Imbalance@Max Power,1512,-106.0,None,None,%_I/Q,100.00,None
+ WCDMA,4,Timing Error -@Max Power,1512,-106.0,None,None,chip,0.1,None
+ WCDMA,4,5.13.2 PCDE@Max Power,1512,-106.0,None,-15,dB,-48.83,PASS
+ WCDMA,4,5.13.1 EVM@-18dBm,1512,-106.0,None,17.5,RMS,3.44,PASS
+ WCDMA,4,Origin Offset@-18dBm,1512,-106.0,None,None,dB,-56.72,None
+ WCDMA,4,Phase Error@-18dBm,1512,-106.0,None,None,deg_rms,1.24,None
+ WCDMA,4,Magnitude Error@-18dBm,1512,-106.0,None,None,%_rms,2.67,None
+ WCDMA,4,IQ Imbalance@-18dBm,1512,-106.0,None,None,%_I/Q,99.94,None
+ WCDMA,4,Timing Error -@-18dBm,1512,-106.0,None,None,chip,0.2,None
+ WCDMA,4,5.13.2 PCDE@-18dBm,1512,-106.0,None,-15,dB,-46.47,PASS
+ WCDMA,4,5.4.3 Min output Power,1512,-93.0,None,-49,dBm,-53.29,PASS
+ WCDMA,4,Origin Offset@Max Power,1313,-93.0,None,None,dB,-66.05,None
+ WCDMA,4,Phase Error@Max Power,1313,-93.0,None,None,deg_rms,0.77,None
+ WCDMA,4,Magnitude Error@Max Power,1313,-93.0,None,None,%_rms,0.72,None
+ WCDMA,4,IQ Imbalance@Max Power,1313,-93.0,None,None,%_I/Q,99.95,None
+ WCDMA,4,Timing Error -@Max Power,1313,-93.0,None,None,chip,0.2,None
+ WCDMA,4,5.4.2 ILPC;STEP-A,1313,-60.0,None,None,None,None,PASS
+ WCDMA,4,5.4.2 ILPC;STEP-B,1313,-60.0,None,None,None,None,PASS
+ WCDMA,4,5.4.2 ILPC;STEP-C,1313,-60.0,None,None,None,None,PASS
+ WCDMA,4,5.4.2 ILPC;STEP-D  Max Power,1313,-60.0,None,None,dBm,24.51,None
+ WCDMA,4,5.4.2 ILPC;STEP-E,1313,-60.0,None,None,None,None,PASS
+ WCDMA,4,5.4.2 ILPC;STEP-F,1313,-60.0,None,None,None,None,PASS
+ WCDMA,4,5.4.2 ILPC;STEP-G,1313,-60.0,None,None,None,None,PASS
+ WCDMA,4,5.4.2 ILPC;STEP-H,1313,-60.0,None,None,None,None,PASS
+ WCDMA,4,Origin Offset@Max Power,1450,-93.0,None,None,dB,-68.25,None
+ WCDMA,4,Phase Error@Max Power,1450,-93.0,None,None,deg_rms,0.71,None
+ WCDMA,4,Magnitude Error@Max Power,1450,-93.0,None,None,%_rms,0.95,None
+ WCDMA,4,IQ Imbalance@Max Power,1450,-93.0,None,None,%_I/Q,100.13,None
+ WCDMA,4,Timing Error -@Max Power,1450,-93.0,None,None,chip,0.1,None
+ WCDMA,4,5.4.2 ILPC;STEP-A,1450,-60.0,None,None,None,None,PASS
+ WCDMA,4,5.4.2 ILPC;STEP-B,1450,-60.0,None,None,None,None,PASS
+ WCDMA,4,5.4.2 ILPC;STEP-C,1450,-60.0,None,None,None,None,PASS
+ WCDMA,4,5.4.2 ILPC;STEP-D  Max Power,1450,-60.0,None,None,dBm,24.57,None
+ WCDMA,4,5.4.2 ILPC;STEP-E,1450,-60.0,None,None,None,None,PASS
+ WCDMA,4,5.4.2 ILPC;STEP-F,1450,-60.0,None,None,None,None,PASS
+ WCDMA,4,5.4.2 ILPC;STEP-G,1450,-60.0,None,None,None,None,PASS
+ WCDMA,4,5.4.2 ILPC;STEP-H,1450,-60.0,None,None,None,None,PASS
+ WCDMA,4,Origin Offset@Max Power,1512,-93.0,None,None,dB,-70.11,None
+ WCDMA,4,Phase Error@Max Power,1512,-93.0,None,None,deg_rms,0.79,None
+ WCDMA,4,Magnitude Error@Max Power,1512,-93.0,None,None,%_rms,1.15,None
+ WCDMA,4,IQ Imbalance@Max Power,1512,-93.0,None,None,%_I/Q,100.10,None
+ WCDMA,4,Timing Error -@Max Power,1512,-93.0,None,None,chip,0.2,None
+ WCDMA,4,5.4.2 ILPC;STEP-A,1512,-60.0,None,None,None,None,PASS
+ WCDMA,4,5.4.2 ILPC;STEP-B,1512,-60.0,None,None,None,None,PASS
+ WCDMA,4,5.4.2 ILPC;STEP-C,1512,-60.0,None,None,None,None,PASS
+ WCDMA,4,5.4.2 ILPC;STEP-D  Max Power,1512,-60.0,None,None,dBm,24.68,None
+ WCDMA,4,5.4.2 ILPC;STEP-E,1512,-60.0,None,None,None,None,PASS
+ WCDMA,4,5.4.2 ILPC;STEP-F,1512,-60.0,None,None,None,None,PASS
+ WCDMA,4,5.4.2 ILPC;STEP-G,1512,-60.0,None,None,None,None,PASS
+ WCDMA,4,5.4.2 ILPC;STEP-H,1512,-60.0,None,None,None,None,PASS
+
