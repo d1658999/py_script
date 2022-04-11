@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.2">
+  <object class="ttk.Frame" id="toplevel">
+    <property name="height">200</property>
+    <property name="width">200</property>
+    <layout manager="pack">
+      <property name="side">top</property>
+    </layout>
+    <child>
+      <object class="ttk.Frame" id="tiltle_frame">
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout manager="pack">
+          <property name="side">top</property>
+        </layout>
+        <child>
+          <object class="ttk.Label" id="title_label">
+            <property name="font">{Arial} 16 {bold}</property>
+            <property name="text" translatable="yes">Hello, World !!</property>
+            <layout manager="pack">
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Frame" id="input_frame">
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout manager="pack">
+          <property name="side">top</property>
+        </layout>
+        <child>
+          <object class="ttk.Label" id="input_label">
+            <property name="text" translatable="yes">Input</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="input_entry">
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">please input here</property>
+            <property name="textvariable">string:input_text</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="padx">3</property>
+              <property name="pady">3</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="ok_button">
+            <property name="command" type="command" cbtype="simple">ok_click</property>
+            <property name="text" translatable="yes">OK</property>
+            <layout manager="grid">
+              <property name="column">3</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Frame" id="output_frame">
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout manager="pack">
+          <property name="side">top</property>
+        </layout>
+        <child>
+          <object class="ttk.Label" id="output_label">
+            <property name="background">#00ff00</property>
+            <property name="font">{Arial Black} 24 {bold}</property>
+            <property name="text" translatable="yes">output here</property>
+            <property name="textvariable">string:output_text</property>
+            <layout manager="pack">
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

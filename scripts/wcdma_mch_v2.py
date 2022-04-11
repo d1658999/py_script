@@ -1,7 +1,7 @@
 import json
 
 def mchs(band):
-    file = 'lte_mch.json'
+    file = './wcdma_mch.json'
     with open(file, 'r') as ltemch:
         mchs = json.load(ltemch)
     return mchs[str(int(band))]

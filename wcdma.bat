@@ -1,1 +1,1 @@
-start cmd /k .\venv\Scripts\python.exe .\wcdma_csv2pivottable.py
+start cmd /k .\venv\Scripts\python.exe .\scripts\wcdma_csv2pivottable.py

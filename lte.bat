@@ -1,1 +1,1 @@
-start cmd /k .\venv\Scripts\python.exe .\lte_csv2pivottable.py
+start cmd /k .\venv\Scripts\python.exe .\scripts\lte_csv2pivottable.py

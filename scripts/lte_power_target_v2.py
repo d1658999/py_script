@@ -1,7 +1,7 @@
 import json
 
 def power_target(band):
-    file = 'lte_power_target.json'
+    file = './lte_power_target.json'
     with open(file, 'r') as target:
         pwr_target = json.load(target)
     return pwr_target[str(int(band))]
