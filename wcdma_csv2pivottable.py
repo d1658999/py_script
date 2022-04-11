@@ -87,7 +87,6 @@ class Csv2pt:
                 self.condition[item] = {}
                 self.condition[item] = self.df['Test Item'].str.contains(item)
 
-
     def pwr(self):
         # this begins to transfer to pivot table
         self.df_pwr, self.pt_pwr = self._csv2pt(self.df, self.condition, ITEMS_INDEX['pwr'])
@@ -129,8 +128,6 @@ class Csv2pt:
             else:
                 print(f'{item} is not in the raw data ')
 
-
-
     @staticmethod
     def _plotlines(df, item, legend_label):
         x = []
@@ -165,14 +162,14 @@ class Csv2pt:
                     # for mod in self.pt_aclr[item]:
                     if self.pt_aclr[item].empty is not True:
                         self.pt_aclr[item] = self.pt_aclr[item].style.applymap(self._aclr_evm_color,
-                                                                           color=COLOR, item=item)
+                                                                               color=COLOR, item=item)
                         self.pt_aclr[item].to_excel(writer, sheet_name=f'ACLR')
             if EVM_EN == 1:
                 for item in evm_items:
                     # for mod in self.pt_evm[item]:
                     if self.pt_evm[item].empty is not True:
                         self.pt_evm[item] = self.pt_evm[item].style.applymap(self._aclr_evm_color,
-                                                                         color=COLOR, item=item)
+                                                                             color=COLOR, item=item)
                         self.pt_evm[item].to_excel(writer, sheet_name=f'EVM')
 
     def _aclr_evm_color(self, cell, color, item):
